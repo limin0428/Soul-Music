@@ -1,8 +1,9 @@
 {
-  "name": "NeteaseCloudMusic",
+  "name": "SoulMusic",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "webpack -p",
     "dev": "webpack-dev-server --open"
   },
   "keywords": [],
@@ -46,14 +47,5 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PH-C/NeteaseCloudMusic.git"
-  },
-  "bugs": {
-    "url": "https://github.com/PH-C/NeteaseCloudMusic/issues"
-  },
-  "homepage": "https://github.com/PH-C/NeteaseCloudMusic#readme",
-  "description": "NeteaseCloudMusic React"
+  }
 }
