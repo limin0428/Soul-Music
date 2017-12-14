@@ -12,7 +12,7 @@ export default class MusicInfo extends Component{
 }
    musicLic=()=>(
         <div className='music-lrc'>
-            <div className='musicInfo-sound'>
+            <div className='music-sound'>
                    <span className='icon-sound iconfont icon-systemprompt'>
                    </span>
                 <span className='sound-line'>
