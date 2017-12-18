@@ -1,9 +1,12 @@
 import React,{Component} from 'react';
-export default class Comment extends Component{
+import './index.css';
+import SongView from '../../../../components/SongView/index';
+export default class NewMusicList extends Component{
     render(){
         return (
-            <div>
-              Comment
+            <div className="newmusic">
+                <div className="newmusic-title"><span>本周新碟</span></div>
+                <SongView />
             </div>
         )
     }

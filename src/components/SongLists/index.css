@@ -1,0 +1,30 @@
+.songlists {
+  width: 100%;
+  background-color: #fff;
+}
+
+.songlists ul {
+  padding: 0 .2rem;
+}
+
+.songlists ul li {
+  border-top:1px solid #ddd;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.songlist p{
+  height: .3rem;
+  line-height: .3rem;
+}
+.songlist-name {
+  font-size: .18rem;
+}
+
+.songlist-icon {
+  line-height: .6rem;
+}
+
+.songlist-icon i {
+  font-size: .3rem;
+}
