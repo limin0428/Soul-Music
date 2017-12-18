@@ -35,9 +35,10 @@ app.get('/sliders', (req, res) => {
     })
 });
 // 获取精品歌单
-app.post('/playlist', (req, res) => {
-    let num = parseInt(req.body.num); // 获取的歌单数量
+app.get('/playlist', (req, res) => {
+    let num = 3 ; // 获取的歌单数量  parseInt(req.body.num)
     request(`http://localhost:${listen}/top/playlist/highquality?limit=${num}`, function (error, response, data) {
+        console.log(data);
         res.json(data);
 });
 // 获取歌单
