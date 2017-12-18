@@ -30,13 +30,24 @@
     z-index: 3;
 
 }
+/*.music-picBg{*/
+    /*position: absolute;*/
+    /*right:-0.5rem;*/
+    /*bottom:-0.5rem;*/
+    /*width: 2.8rem;*/
+    /*height: 2.8rem;*/
+    /*background: url("../../../images/music-bg.png")no-repeat;*/
+    /*background-size: cover;*/
+    /*z-index: -1;*/
+    /*border-radius: 50%;*/
+/*}*/
 .musicInfo-pic{
     margin: 0.8rem auto 0;
     width: 1.8rem;
     height: 1.8rem;
     border-radius:50% ;
     z-index: 4;
-    animation: rotating 8s linear infinite;
+    animation: rotating 12s linear infinite;
 }
 .PicInfo{
     width:100%;

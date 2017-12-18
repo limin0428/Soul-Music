@@ -49,7 +49,7 @@ app.post('/musiclist',(req,res) => {
 });
 // 获取歌曲
     app.post('/music',(req,res) => {
-        let data = parseInt(req.body.data); // 获取的歌单id
+        let id = parseInt(req.body.id); // 获取的歌单id
         request(`http://localhost:${listen}/music/url?id=${id}`,function (error,response,data) {
             res.json(data);
         })
