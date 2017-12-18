@@ -29,8 +29,8 @@ export default class MusicInfo extends Component{
     musicInfo=()=>(
         <div className='musicInfo'>
             <div className='musicInfo-middle'>
-               <div className='musicInfo-pic'>
-                   <img className='PicInfo' src="https://y.gtimg.cn/music/photo_new/T001R150x150M000002J4UUk29y8BY.jpg?max_age=2592000" alt=""/>
+               <div className='musicInfo-pic' style={this.props.isPlay?{animationPlayState: "running"}:{animationPlayState:"paused"}}>
+                   <img className='PicInfo'  src="https://y.gtimg.cn/music/photo_new/T001R150x150M000002J4UUk29y8BY.jpg?max_age=2592000" alt=""/>
                </div>
             </div>
             <div className='music-collect'>

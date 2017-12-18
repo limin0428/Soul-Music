@@ -1,7 +1,13 @@
 import React,{Component} from 'react';
 import './PlayList.css'
+import {getPlayList} from "../../../api/player";
 
 export default class PlayList extends Component{
+
+    componentDidMount(){
+       getPlayList()
+
+    }
     render(){
         return (
             <div>

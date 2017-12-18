@@ -1,5 +1,5 @@
 import {get, post} from './index';
-//获取轮播图
-export function getPlayList() {
-    return get('/api/');
+//获取歌曲列表
+export function getPlayList(data) {
+    return post(`/music`,data);
 }

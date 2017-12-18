@@ -36,7 +36,7 @@ export default class Single extends Component {
             <div>
              <Audio songUrl={songUrl}  isPlay={this.state.isPlay} currentTolTime={this.state.currentTolTime} currentTime={this.currentTime} />
                     <MusicPlayerHeader/>
-                <MusicInfo/>
+                <MusicInfo isPlay={this.state.isPlay}/>
                     <Control isPlay={this.state.isPlay} handlePlay={this.handlePlay}/>
             </div>
 

@@ -1,6 +1,6 @@
 //向服务器发送get请求，获取响应
 //credentials 在向服务器发请求的时候要带上cookie
-const HOST = 'http://localhost:3000';
+const HOST = 'http://localhost:9527';
 export function get(url){
     return fetch(HOST+url,{
         method:'GET',

@@ -36,6 +36,7 @@
     height: 1.8rem;
     border-radius:50% ;
     z-index: 4;
+    animation: rotating 8s linear infinite;
 }
 .PicInfo{
     width:100%;
