@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soul Music</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503663_zho2dfi2qyf1or.css">
+    <link rel="stylesheet" href="///at.alicdn.com/t/font_503663_drqma8432y6z85mi.css">
+    <script>
+        //设计稿宽度375对应的根节点fontsize是100px即1rem=100px;
+        var desW=375;
+        function refreshRem() {
+            var doc=document.documentElement;
+            var winW=doc.clientWidth;
+            var radio=winW/desW;//设计稿和窗口大小的比例
+
+            doc.style.fontSize=100*radio+'px';
+        }
+        refreshRem();
+        //监听窗口大小的变化重新计算rem的大小
+        window.addEventListener('resize',refreshRem)
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            font-size: 100px;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            overflow-x:hidden;
+        }
+        #app{
+            font-size: 0.14rem;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app"></div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+.music-bg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    bottom:0;
+    background: -webkit-linear-gradient(top, #5c0000, #175543, #4b4b4b, #604231)
+}
+.music-bgMark{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    bottom:0;
+    background-color: #586351;
+    opacity: 0.6;
+    z-index: 2;
+}
+.music-main{
+
+}
+.musicInfo{
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 100%;
+    height: 60%;
+    border-top:1px solid #aaaaaa;
+    z-index: 3;
+
+}
+.musicInfo-pic{
+    margin: 0.8rem auto 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius:50% ;
+    z-index: 4;
+}
+.PicInfo{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.music-collect{
+    position: absolute;
+    left: 0.8rem;
+    bottom: -1.7rem;
+}
+.icon-collect{
+    font-size: 0.39rem;
+    position: absolute;
+    left: -0.35rem;
+    bottom: 1.78rem;
+    color: #fff;
+}
+.go-lrc{
+    font-size: 0.3rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 1.95rem;
+    z-index: 5;
+    color: #fff;
+}
+
+.music-lrc{
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 100%;
+    height: 60%;
+    border-top:1px solid #aaaaaa;
+    z-index: 3;
+}
+.song-lrc{
+    margin: 0.1rem auto 0;
+    height: 3rem;
+    width:100%;
+    overflow: hidden;
+    z-index: 4;
+}
+.song-lrc p{
+    width:3rem;
+    margin: 0 auto;
+    line-height: 0.56rem;
+    font-size: 0.2rem;
+    text-align: center;
+    color: #6ffcb1;
+}
+.music-sound{
+    display:flex;
+    width: 3rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 0.4rem;
+    z-index: 4;
+}
+.music-sound span{
+    color: #fff;
+}
+.icon-sound{
+    font-size: 0.3rem;
+    color: #fff;
+}
+.sound-line{
+    width: 2.2rem;
+    height: 0.04rem;
+    background-color: #7ebaff;
+}
