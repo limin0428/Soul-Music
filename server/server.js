@@ -51,7 +51,7 @@ app.post('/musiclist',(req,res) => {
 // 获取歌曲
     app.post('/music',(req,res) => {
         let id = parseInt(req.body.id); // 获取的歌单id
-        request(`http://localhost:${listen}/playlist/detail?id=${id}`,function (error,response,data) {
+        request(`http://localhost:${listen}/music/url?id=${id}`,function (error,response,data) {
             res.json(data);
         })
     });

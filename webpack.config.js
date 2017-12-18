@@ -15,7 +15,7 @@ module.exports = {
     devServer: {
         //如果请求的路径是以/api开头的话，会由3000这个服务来进行解析处理
         proxy: {
-            "/api": "http://localhost:3000"
+            "/api": "http://localhost:9527"
         }
     },
     //配置模块
