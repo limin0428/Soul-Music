@@ -87,7 +87,7 @@ export default class HomeFooter extends Component{
             <div className="home-footer">
               <div className="home-song">
                 <div>
-                  <img src={require('../../../../images/fengmian.jpg')}/>
+                  <img src={require('../../../../image/fengmian.jpg')}/>
                 </div>
                 <div>
                   <p className="home-song-title">什么</p>
