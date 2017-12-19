@@ -1,3 +1,5 @@
 
-//增加一首歌曲
-export const ADD_PLAYLIST='ADD_PLAYLIST'
+//增加一个列表
+export const ADD_PLAYLIST='ADD_PLAYLIST';
+
+export const ADD_PLAYLIST_SUCCESS='ADD_PLAYLIST_SUCCESS';

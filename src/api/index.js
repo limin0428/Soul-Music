@@ -19,13 +19,6 @@ export function post(url,id) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({'id':id})
-        }).then((response) => {
-            console.log(response.json());
-        }).catch((err) => {
-                dispatch(success({
-                    msg: (__DEBUG__ && err.message) ? err.message : strings.NET_ERROR,
-                    data: false
-                }));
-            });
+        }).then(res=>res.json())
     }
 

@@ -1,7 +1,11 @@
-import {ADD_PLAYLIST} from "../action-types";
-export default function (state=[],action) {
-    switch (action.types){
-        case ADD_PLAYLIST:
-            return [...state,{}]
+import * as types from "../action-types";
+
+
+export function playList(state={},action) {
+    switch (action.type){
+        case types.ADD_PLAYLIST:
+            return action.payload;
+        default:
+          return state
     }
 }

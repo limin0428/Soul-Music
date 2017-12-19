@@ -1,11 +1,16 @@
 import React,{Component} from 'react';
 import './PlayList.css'
 import {getPlayList} from '../../../api/player'
-export default class PlayList extends Component{
-
+import {connect} from 'react-redux'
+import actions from "../../../store/actions/playList";
+ class PlayList extends Component{
     componentDidMount(){
+        this.props.fetchPlayList();
 
     }
+    //  componentWillReceiveProps(){
+    //      console.log(this.props.fetchPlayList());
+    //  }
     render(){
         return (
             <div>
@@ -25,48 +30,16 @@ export default class PlayList extends Component{
                             <span>背过手</span>
                             <span className='play-listDel'>×</span>
                         </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
+                        {
+                            // this.state.PlayListData.tracks.map((item,index)=>{
+                            //     <li className='play-listContent' key={index}>
+                            //         <span>{item.ar[0].name}</span>
+                            //         <span>-</span>
+                            //         <span>{item.name}</span>
+                            //         <span className='play-listDel'>×</span>
+                            //     </li>
+                            // })
+                        }
 
                     </ul>
                     <div className='play-listFooter' onClick={this.props.handlePlayList}>
@@ -77,3 +50,7 @@ export default class PlayList extends Component{
         )
     }
 }
+export default connect(
+    state=>state,
+    actions
+)(PlayList)
