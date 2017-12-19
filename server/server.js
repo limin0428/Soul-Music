@@ -51,9 +51,13 @@ app.post('/musiclist', (req, res) => {
 // 获取歌曲
 app.post('/music', (req, res) => {
     let id = parseInt(req.body.id); // 获取的歌单id
+    console.log(id);
     request(`http://localhost:${listen}/music/url?id=${id}`, function (error, response, data) {
         if (!error && response.statusCode == 200) {
-            res.json(data)
+           /* console.log(error);
+            console.log(response,'111111');
+            console.log(data);*/
+            res.json(data);
         }
     });
 });
@@ -62,7 +66,6 @@ app.post('/lyric', (req, res) => {
     let id = parseInt(req.body.id); // 获取的歌单id
     request(`http://localhost:${listen}/lyric?id=${id}`, function (error, response, data) {
         res.json(data);
-
     })
 });
 

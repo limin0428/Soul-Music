@@ -7,7 +7,6 @@ componentDidUpdate(){
     }else{
         this.audio.pause();
     }
-
 }
     render(){
         return (
