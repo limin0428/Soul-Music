@@ -1,9 +1,10 @@
 import React,{Component} from 'react';
-export default class AboutMe extends Component{
+import NewMusicList from '../containers/Home/Music/NewMusicList/index';
+export default class App extends Component{
     render(){
         return (
             <div>
-                {/*AboutMe*/}
+                <NewMusicList />
             </div>
         )
     }
