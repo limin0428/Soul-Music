@@ -1,10 +1,16 @@
 import React,{Component} from 'react';
-import NewMusicList from '../containers/Home/Music/NewMusicList/index';
+
+
+
+import Single from "./Single/Single";
+
+
 export default class App extends Component{
     render(){
         return (
             <div>
-                <NewMusicList />
+
+                <Single/>
             </div>
         )
     }
