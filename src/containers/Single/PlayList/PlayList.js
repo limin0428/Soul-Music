@@ -12,13 +12,13 @@ export default class PlayList extends Component{
         return (
             <div>
                 <div className='play-list' style={this.props.isPlayList?{display:'block'}:{display:'none'}}>
-                    <div className='play-listBg'></div>
-                    <div className='play-listBgMark'></div>
+                    <div className='play-listBg'> </div>
+                    <div className='play-listBgMark'> </div>
                     <div className='play-listHead'>
                        <h1 className='play-listName'>歌曲列表
                        <span>(1)</span>
                        </h1>
-                        <span className='play-listClear iconfont icon-lajixiang1'></span>
+                        <span className='play-listClear iconfont icon-lajixiang1'> </span>
                     </div>
                     <ul className='play-listBody'>
                         <li className='play-listContent'>
