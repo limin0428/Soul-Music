@@ -18,7 +18,7 @@ export default class Control extends Component{
     // }
     handlePlayList=()=>(
        this.setState({isPlayList:!this.state.isPlayList})
-    )
+    );
         render(){
         return (
            <div className='controls-main'>
@@ -29,15 +29,15 @@ export default class Control extends Component{
                    <Progress/>
                </div>
                <div className="controls">
-                   <span className="icon-next iconfont icon-xiayishou"></span>
+                   <span className="icon-next iconfont icon-xiayishou"> </span>
 
                    <span className={this.props.isPlay?' iconfont icon-zanting1 icon-pause':' iconfont icon-bofang icon-play'} onClick={this.props.handlePlay}>
                            </span>
-                   <span className="icon-prev iconfont icon-shangxiayishou"></span>
+                   <span className="icon-prev iconfont icon-shangxiayishou"> </span>
                </div>
                <div className='controls-footer'>
-                   <span className='icon-list iconfont icon-liebiao1' onClick={this.handlePlayList}></span>
-                   <span className='icon-left iconfont icon-xunhuan'></span>
+                   <span className='icon-list iconfont icon-liebiao1' onClick={this.handlePlayList}> </span>
+                   <span className='icon-left iconfont icon-xunhuan'> </span>
                </div>
                <div>
                    <PlayList

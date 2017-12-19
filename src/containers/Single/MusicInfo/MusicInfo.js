@@ -1,16 +1,18 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import './MusicInfo.css'
-export default class MusicInfo extends Component{
-    constructor(){
+
+export default class MusicInfo extends Component {
+    constructor() {
         super();
-        this.state={
-            isSong:false
+        this.state = {
+            isSong: false
         }
     }
-    handleSong=()=>{
-        this.setState({isSong:!this.state.isSong})
-}
-   musicLic=()=>(
+
+    handleSong = () => {
+        this.setState({isSong: !this.state.isSong})
+    };
+    musicLic = () => (
         <div className='music-lrc'>
             <div className='music-sound'>
                    <span className='icon-sound iconfont icon-systemprompt'>
@@ -25,14 +27,17 @@ export default class MusicInfo extends Component{
                 <p>怕过去白费</p>
             </div>
         </div>
-    )
-    musicInfo=()=>(
+    );
+    musicInfo = () => (
         <div className='musicInfo'>
             <div className='musicInfo-middle'>
-               <div className='musicInfo-pic' style={this.props.isPlay?{animationPlayState: "running"}:{animationPlayState:"paused"}}>
-                   {/*<div className='music-picBg'></div>*/}
-                   <img className='PicInfo'  src="https://y.gtimg.cn/music/photo_new/T001R150x150M000002J4UUk29y8BY.jpg?max_age=2592000" alt=""/>
-               </div>
+                <div className='musicInfo-pic'
+                     style={this.props.isPlay ? {animationPlayState: "running"} : {animationPlayState: "paused"}}>
+                    {/*<div className='music-picBg'></div>*/}
+                    <img className='PicInfo'
+                         src="https://y.gtimg.cn/music/photo_new/T001R150x150M000002J4UUk29y8BY.jpg?max_age=2592000"
+                         alt=""/>
+                </div>
             </div>
             <div className='music-collect'>
                            <span className='icon-collect iconfont icon-shoucang2'>
@@ -40,17 +45,18 @@ export default class MusicInfo extends Component{
                            </span>
             </div>
         </div>
-    )
-    render(){
+    );
+
+    render() {
         return (
-           <div className='music-main'>
-               {
-                 this.state.isSong?this.musicLic():this.musicInfo()
-               }
-               <span className='go-lrc iconfont icon-zhuomiangeci' onClick={this.handleSong}></span>
-               <div className='music-bg'></div>
-               <div className='music-bgMark'></div>
-           </div>
+            <div className='music-main'>
+                {
+                    this.state.isSong ? this.musicLic() : this.musicInfo()
+                }
+                <span className='go-lrc iconfont icon-zhuomiangeci' onClick={this.handleSong}> </span>
+                <div className='music-bg'> </div>
+                <div className='music-bgMark'> </div>
+            </div>
         )
     }
 }

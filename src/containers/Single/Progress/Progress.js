@@ -18,7 +18,7 @@ export default class Progress extends Component{
                 <div className="music-progress">
                     <div className="current">{this.timeConvert(this.props.currentTime)}</div>
                     <div className="timeLine">
-                        <span className='progress-line' ></span>
+                        <span className='progress-line' > </span>
                     </div>
                     <div className="duration">{this.timeConvert(this.props.currentTolTime)}</div>
                 </div>
