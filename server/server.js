@@ -18,7 +18,7 @@ app.use(session({
     },100)
 });*/
 app.use(function(req,res,next){
-    res.header('Access-Control-Allow-Origin',"http://localhost:8080");
+    res.header('Access-Control-Allow-Origin','http://localhost:8080');
     res.header('Access-Control-Allow-Headers',"Content-Type");
     res.header('Access-Control-Allow-Methods',"GET,POST,PUT,DELETE,OPTIONS");
     res.header('Access-Control-Allow-Credentials',"true");
@@ -50,6 +50,7 @@ app.post('/musiclist',(req,res) => {
 // 获取歌曲
     app.post('/music',(req,res) => {
         let id = parseInt(req.body.id); // 获取的歌单id
+        console.log(id);
         request(`http://localhost:${listen}/music/url?id=${id}`,function (error,response,data) {
             res.json(data);
         })

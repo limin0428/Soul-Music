@@ -34,7 +34,7 @@ module.exports = {
                 }
             },
             //如果要加载的模块是以.css结尾的话，使用css style loader
-            {test: /\.(css|less)$/, loaders: ["style-loader", "css-loader"]},
+            {test: /\.(css|less)$/, loaders: ["style-loader", "css-loader","less-loader"]},
             {test:/\.(mp3|m4a|mp4)$/,loader:'file-loader'},
             {
                 test: /\.(jpg|png|gif|eot|svg|woff|woff2|ttf)$/,

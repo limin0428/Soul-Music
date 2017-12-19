@@ -8,7 +8,7 @@ export function get(url){
         headers:{
             "Accept":"application/json",//请求头
         }
-    }).then(res=>res.json())//把响应体转成json
+    }).then(res=>res.json());//把响应体转成json
 }
 //url后台地址 data 请求体
 export function post(url,data) {
