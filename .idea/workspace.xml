@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="afc5d3de-2ab9-4ab1-ab43-f37b263e1cde" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/bj.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/icon_list.png" />
@@ -17,10 +18,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/action-types.js" afterPath="$PROJECT_DIR$/src/store/action-types.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/index.js" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/containers/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+=======
+    <list default="true" id="32b13642-f5cd-4471-b340-ac069df65565" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+>>>>>>> limin
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+<<<<<<< HEAD
+=======
+    <ignored path="$PROJECT_DIR$/.idea/" />
+>>>>>>> limin
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +38,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Reg/index.js">
@@ -87,6 +97,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1152">
               <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+=======
+    <leaf>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="36" column="87" lean-forward="false" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+>>>>>>> limin
               <folding />
             </state>
           </provider>
@@ -98,12 +116,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+<<<<<<< HEAD
         <option value="CSS File" />
+=======
+>>>>>>> limin
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>class</find>
       <find>choose_box</find>
       <find>login</find>
@@ -112,6 +134,11 @@
       <find>icons</find>
       <find>regTop</find>
       <find>back</find>
+=======
+      <find>searchRes</find>
+      <find>highlights</find>
+      <find>65766</find>
+>>>>>>> limin
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,6 +147,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/containers/Login/index.less" />
@@ -146,6 +174,19 @@
         <option value="$PROJECT_DIR$/src/containers/NavLeft/index.css" />
         <option value="$PROJECT_DIR$/src/containers/Login/index.js" />
         <option value="$PROJECT_DIR$/src/containers/Reg/index.css" />
+=======
+        <option value="$PROJECT_DIR$/server/mock/1.js" />
+        <option value="$PROJECT_DIR$/server/mock/sliders.js" />
+        <option value="$PROJECT_DIR$/server/mock/1.json" />
+        <option value="D:/Project/scratches/C/Vue/vue-book-plus/mock/express-server.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/1.js" />
+        <option value="D:/ass/earlyjoy/router/page.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/1.json" />
+        <option value="$PROJECT_DIR$/src/containers/Home/HomeFooter/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+>>>>>>> limin
       </list>
     </option>
   </component>
@@ -154,21 +195,54 @@
     <package-json value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="JsFlowSettings">
+<<<<<<< HEAD
     <service-enabled>false</service-enabled>
     <exe-path />
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
+=======
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+>>>>>>> limin
     <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="2" />
     <option name="width" value="1934" />
     <option name="height" value="1096" />
+=======
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="width" value="1932" />
+    <option name="height" value="1042" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+>>>>>>> limin
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -195,6 +269,7 @@
             <path>
               <item name="Soul-Music" type="b2602c69:ProjectViewProjectNode" />
               <item name="Soul-Music" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="font_lrlq5aoy1hhq6w29" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,12 +296,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="LogOrReg" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+>>>>>>> limin
             </path>
             <path>
               <item name="Soul-Music" type="b2602c69:ProjectViewProjectNode" />
               <item name="Soul-Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="NavLeft" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,6 +326,8 @@
               <item name="Soul-Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> limin
             </path>
           </expand>
           <select />
@@ -257,6 +338,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -280,6 +362,24 @@
       <recent name="D:\Soul-Music\src\api" />
       <recent name="D:\Soul-Music\src\store\reducers" />
     </key>
+=======
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/ass/earlyjoy" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="C:/Program Files/nodejs/node" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.path.for.package.jscs" value="C:/Program Files/nodejs/node" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.selected.package.jscs" value="" />
+>>>>>>> limin
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -306,6 +406,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="afc5d3de-2ab9-4ab1-ab43-f37b263e1cde" name="Default" comment="" />
       <created>1513251019840</created>
       <option name="number" value="Default" />
@@ -319,10 +420,21 @@
       <workItem from="1513422279543" duration="857000" />
       <workItem from="1513516083284" duration="6574000" />
       <workItem from="1513584305590" duration="5856000" />
+=======
+      <changelist id="df1c90bc-21ee-4537-bb0d-4f3d01c8b07f" name="Default" comment="" />
+      <created>1513324392484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513324392484</updated>
+      <workItem from="1513324394002" duration="13562000" />
+      <workItem from="1513387951798" duration="2882000" />
+      <workItem from="1513573550921" duration="4561000" />
+>>>>>>> limin
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="29675000" />
   </component>
   <component name="ToolWindowManager">
@@ -345,6 +457,45 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="22489000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.113895215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10250569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> limin
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +505,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
@@ -450,6 +602,12 @@
         </state>
       </provider>
     </entry>
+=======
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+>>>>>>> limin
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -457,6 +615,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -642,11 +801,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1080">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://D:/Project/new/zhufengketang/server/server.js" />
+    <entry file="file://D:/test/demo/NeteaseCloudMusic/server/server.js" />
+    <entry file="file://F:/test/demo/CarpListen/server/server.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/test/demo/NeteaseCloudMusic/server/mock/sliders.js" />
+    <entry file="file://$PROJECT_DIR$/server/mock/track.js" />
+    <entry file="file://$PROJECT_DIR$/server/mock/sliders.js" />
+    <entry file="file://D:/Project/scratches/C/Vue/vue-book-plus/mock/express-server.js" />
+    <entry file="file://$PROJECT_DIR$/server/mock/1.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/querystring/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/mock/1.js" />
+    <entry file="file://$PROJECT_DIR$/server/mock/newSongs.js" />
+    <entry file="file://$PROJECT_DIR$/server/mock/searchResult.js" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Project/new/zhufengketang/src/api/session.js" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/ass/earlyjoy/router/page.js" />
+    <entry file="file://D:/Project/new/zhufengketang/server/server.js" />
+    <entry file="file://D:/test/demo/NeteaseCloudMusic/server/server.js" />
+    <entry file="file://$PROJECT_DIR$/server/1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+>>>>>>> limin
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/font_lrlq5aoy1hhq6w29/demo.css">
+=======
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/HomeFooter/index.less">
+>>>>>>> limin
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -654,6 +881,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
@@ -692,14 +920,29 @@
           <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="45" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/HomeFooter/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+>>>>>>> limin
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/containers/Reg/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="93" column="7" lean-forward="false" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="36" column="87" lean-forward="false" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+>>>>>>> limin
           <folding />
         </state>
       </provider>
