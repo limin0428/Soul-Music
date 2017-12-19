@@ -5,6 +5,7 @@ import Reg from "./Reg/index";
 import LogOrReg from "./LogOrReg/index";
 import NavLeft from "./NavLeft/index";
 import PersonalCenter from "./Profile/PersonalCenter/index";
+import Home from "./Home/index";
 
 
 export default class App extends Component{
@@ -12,13 +13,13 @@ export default class App extends Component{
         return (
             <Router>
                 <div>
+                    <Route exact path="/" component={Home}/>
                     <Route path="/personalcenter" component={PersonalCenter}/>
                     <Route path="/logorreg" component={LogOrReg}/>
                     <Route path="/navleft" component={NavLeft}/>
                     <Route path="/login" component={Login}/>
                     <Route path="/reg" component={Reg}/>
                 </div>
-
             </Router>
         )
     }

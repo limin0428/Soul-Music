@@ -7,7 +7,9 @@ export default class HomeTab extends Component{
             <div className="tab">
               <div className="tab-home">
                 <div className="tab-personal">
+                  <Link to="/personalcenter">
                   <i className="iconfont icon-wodeyinyueliebiaomoshi24"></i>
+                  </Link>
                 </div>
                 <div className="tab-list">
                   <i className="iconfont icon-yinle1"></i>
