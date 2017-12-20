@@ -1,5 +1,4 @@
 .alert {
-<<<<<<< HEAD
     width: 100%;
     height: 40px;
     line-height: 40px;
@@ -8,19 +7,6 @@
     margin-top: 10px;
     border-radius: 5px;
     opacity: .6;
-=======
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background-color: #f6f6f6;
-  margin-top: 10px;
-  border-radius: 5px;
-    position: fixed;
-    top: 120px;
-    left: 0;
-  opacity: .6;
->>>>>>> 20334bab25547c8105186b803bd6a7ba961f94fd
 }
 
 .alert.default {
