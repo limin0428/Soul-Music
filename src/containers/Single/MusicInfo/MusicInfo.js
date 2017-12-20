@@ -35,7 +35,7 @@ export default class MusicInfo extends Component {
                      style={this.props.isPlay ? {animationPlayState: "running"} : {animationPlayState: "paused"}}>
                     {/*<div className='music-picBg'></div>*/}
                     <img className='PicInfo'
-                         src="https://y.gtimg.cn/music/photo_new/T001R150x150M000002J4UUk29y8BY.jpg?max_age=2592000"
+                         src={this.props.picUrl}
                          alt=""/>
                 </div>
             </div>
@@ -54,8 +54,12 @@ export default class MusicInfo extends Component {
                     this.state.isSong ? this.musicLic() : this.musicInfo()
                 }
                 <span className='go-lrc iconfont icon-zhuomiangeci' onClick={this.handleSong}> </span>
-                <div className='music-bg'> </div>
-                <div className='music-bgMark'> </div>
+                <div className='music-bg'>
+                    <img className="music-bgImg" src={this.props.picUrl} alt=""/>
+                </div>
+                <div className='music-bgMarkOne'></div>
+                <div className='music-bgMark'>
+                </div>
             </div>
         )
     }

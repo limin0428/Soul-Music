@@ -9,11 +9,12 @@ export function get(url){
         headers:{
             "Accept":"application/json",//请求头
         }
-    }).then(res=>res.json())//把响应体转成json
+    }).then(res=> res.json())//把响应体转成json
 }
 export function post(url,id) {
         return fetch(HOST+url, {
             method: 'POST',
+            credentials:"include",//向服务器发送cookie
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'

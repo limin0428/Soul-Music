@@ -8,8 +8,8 @@ export default class MusicPlayerHeader extends Component{
                    <i className='iconfont icon-fanhui'></i>
                </div>
                <ul className='MHText'>
-                    <li className='single-name'>薛之谦</li>
-                    <li className='song-name'>背过手</li>
+                    <li className='single-name'>{this.props.singleName}</li>
+                    <li className='song-name'>{this.props.songName}</li>
                 </ul>
            </div>
         )

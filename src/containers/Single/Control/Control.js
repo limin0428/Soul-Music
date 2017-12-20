@@ -33,14 +33,14 @@ export default class Control extends Component{
 
                    <span className={this.props.isPlay?' iconfont icon-zanting1 icon-pause':' iconfont icon-bofang icon-play'} onClick={this.props.handlePlay}>
                            </span>
-                   <span className="icon-prev iconfont icon-shangxiayishou"> </span>
+                   <span className="icon-prev iconfont icon-shangxiayishou" onClick={()=>this.props.handleGoNext()}> </span>
                </div>
                <div className='controls-footer'>
                    <span className='icon-list iconfont icon-liebiao1' onClick={this.handlePlayList}> </span>
                    <span className='icon-left iconfont icon-xunhuan'> </span>
                </div>
                <div>
-                   <PlayList
+                   <PlayList handleChangeSong={this.props.handleChangeSong}
                        isPlayList={this.state.isPlayList}
                        handlePlayList={this.handlePlayList}
                    />

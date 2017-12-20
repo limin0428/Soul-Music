@@ -6,7 +6,7 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 let session = require('express-session');
 app.listen(9527);   // 后台端口
-// let listen = 3000;  // 数据端口
+let listen = 3000;  // 数据端口
 let sliders=require('./mock/sliders');
 let recommendList=require('./mock/recommendList');
 let newSongs=require('./mock/newSongs');
@@ -115,41 +115,41 @@ app.get('/validate', function (req, res) {
         res.json({code: 1, error: '此用户未登录'})
     }
 });
-// app.get('/sliders', (req, res) => {
-//     request(`http://localhost:${listen}/banner`, function (error, response, data) {
-//         res.json(data);
-//     })
-// });
-// app.get('/playlist', (req, res) => {
-//     let num = 3; // 获取的歌单数量  parseInt(req.body.num)
-//     request(`http://localhost:${listen}/top/playlist/highquality?limit=${num}`, function (error, response, data) {
-//         res.json(data);
-//     });
-// });
-// // 获取歌单
-// app.post('/musiclist', (req, res) => {
-//     let id = parseInt(req.body.id); // 获取的歌单id
-//     request(`http://localhost:${listen}/playlist/detail?id=${id}`, function (error, response, data) {
-//         res.json(data);
-//     })
-// });
-// // 获取歌曲
-// app.post('/music', (req, res) => {
-//     let id = parseInt(req.body.id); // 获取的歌单id
-//     request(`http://localhost:${listen}/music/url?id=${id}`, function (error, response, data) {
-//         if (!error && response.statusCode == 200) {
-//             res.json(data)
-//         }
-//     });
-// });
-// //获取歌词
-// app.post('/lyric', (req, res) => {
-//     let id = parseInt(req.body.id); // 获取的歌单id
-//     request(`http://localhost:${listen}/lyric?id=${id}`, function (error, response, data) {
-//         res.json(data);
-//
-//     })
-// });
+app.get('/sliders', (req, res) => {
+    request(`http://localhost:${listen}/banner`, function (error, response, data) {
+        res.json(data);
+    })
+});
+app.get('/playlist', (req, res) => {
+    let num = 3; // 获取的歌单数量  parseInt(req.body.num)
+    request(`http://localhost:${listen}/top/playlist/highquality?limit=${num}`, function (error, response, data) {
+        res.json(data);
+    });
+});
+// 获取歌单
+app.post('/musiclist', (req, res) => {
+    let id = parseInt(req.body.id); // 获取的歌单id
+    request(`http://localhost:${listen}/playlist/detail?id=${id}`, function (error, response, data) {
+        res.json(data);
+    })
+});
+//获取歌曲
+app.post('/music', (req, res) => {
+    let id = parseInt(req.body.id); // 获取的歌单id
+    request(`http://localhost:${listen}/music/url?id=${id}`, function (error, response, data) {
+        if (!error && response.statusCode == 200) {
+            res.json(data)
+        }
+    });
+});
+//获取歌词
+app.post('/lyric', (req, res) => {
+    let id = parseInt(req.body.id); // 获取的歌单id
+    request(`http://localhost:${listen}/lyric?id=${id}`, function (error, response, data) {
+        res.json(data);
+
+    })
+});
 
 /*
 let {type="",offset=0,limit=5} = req.query;

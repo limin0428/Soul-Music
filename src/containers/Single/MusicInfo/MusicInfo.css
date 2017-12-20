@@ -7,15 +7,30 @@
     bottom:0;
     background: -webkit-linear-gradient(top, #5c0000, #175543, #4b4b4b, #604231)
 }
+.music-bgImg{
+    width:100%;
+    height:100%
+}
+.music-bgMarkOne{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    bottom:0;
+    background: -webkit-linear-gradient(top, #5c0000, #175543, #4b4b4b, #604231);
+    opacity: 0.8;
+    z-index: 3;
+
+}
 .music-bgMark{
     position: absolute;
     width:100%;
     height: 100%;
     left: 0;
     bottom:0;
-    background-color: #586351;
-    opacity: 0.6;
-    z-index: 2;
+    background-color: #444d3f;
+    opacity: 0.7;
+    z-index: 3;
 }
 .music-main{
 
@@ -27,7 +42,7 @@
     width: 100%;
     height: 60%;
     border-top:1px solid #aaaaaa;
-    z-index: 3;
+    z-index: 4;
 
 }
 /*.music-picBg{*/
@@ -82,7 +97,7 @@
     width: 100%;
     height: 60%;
     border-top:1px solid #aaaaaa;
-    z-index: 3;
+    z-index: 4;
 }
 .song-lrc{
     margin: 0.1rem auto 0;

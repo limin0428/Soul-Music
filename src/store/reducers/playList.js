@@ -1,11 +1,13 @@
 import * as types from "../action-types";
+let initState={
+    tracks:[]
+};
 
-
-export function playList(state={},action) {
+export function playList(state=initState,action) {
     switch (action.type){
         case types.ADD_PLAYLIST:
-            return action.payload;
+            return {...state,tracks:action.tracks};
         default:
-          return state
+            return state
     }
 }

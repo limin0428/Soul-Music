@@ -4,13 +4,13 @@ import {getPlayList} from '../../../api/player'
 import {connect} from 'react-redux'
 import actions from "../../../store/actions/playList";
  class PlayList extends Component{
-    componentDidMount(){
-        this.props.fetchPlayList();
 
+    componentWillMount(){
+        this.props.fetchPlayList();
     }
-    //  componentWillReceiveProps(){
-    //      console.log(this.props.fetchPlayList());
-    //  }
+     changeSong=(id)=> {
+         let nowSong= this.props.playList.tracks.find(item => item.id == id);
+     }
     render(){
         return (
             <div>
@@ -19,17 +19,22 @@ import actions from "../../../store/actions/playList";
                     <div className='play-listBgMark'> </div>
                     <div className='play-listHead'>
                        <h1 className='play-listName'>歌曲列表
-                       <span>(1)</span>
+                       <span>({this.props.playList.tracks.length})</span>
                        </h1>
                         <span className='play-listClear iconfont icon-lajixiang1'> </span>
                     </div>
                     <ul className='play-listBody'>
-                        <li className='play-listContent'>
-                            <span>薛之谦</span>
-                            <span>-</span>
-                            <span>背过手</span>
-                            <span className='play-listDel'>×</span>
-                        </li>
+                        {
+                            this.props.playList.tracks.map((item,index)=>(
+                                <li className='play-listContent' key={index} onClick={()=>this.props.handleChangeSong(index)}>
+                                    <span>{item.ar[0].name}</span>
+                                    <span>-</span>
+                                    <span>{item.name}</span>
+                                    <span className='play-listDel'>×</span>
+                                </li>
+                            ))
+                        }
+
                         {
                             // this.state.PlayListData.tracks.map((item,index)=>{
                             //     <li className='play-listContent' key={index}>
