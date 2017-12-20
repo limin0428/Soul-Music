@@ -12,8 +12,7 @@ export default class NavLeft extends Component {
                     </Link>
                     <div><Link to="/logorreg">账号登录</Link></div>
                 </li>
-                <li className="
-news">
+                <li className="news">
                     <span><i className="iconfont icon-xinfeng"></i>我的消息</span>
                 </li>
                 <li>
@@ -22,9 +21,7 @@ news">
                 <li>
                     <span><i  className="iconfont icon-gouwu"></i>商城</span>
                 </li>
-                <li>
-                    <span><i  className="iconfont icon-xiangzi"></i>在线听歌免流量</span>
-                </li>
+
                 <li className="void">
                 </li>
                 <li>
@@ -37,9 +34,6 @@ news">
                 </li>
                 <li>
                     <span><i className="iconfont icon-huanfu"></i>个性换肤</span>
-                </li>
-                <li>
-                    <span><i  className="iconfont icon-tinggeshiqu"></i>听歌识曲</span>
                 </li>
                 <li>
                     <span><i  className="iconfont icon-icon2"></i>定时停止播放</span>

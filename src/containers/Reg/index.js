@@ -8,7 +8,8 @@ export default class Reg extends Component {
         let tel=this.tel.value;
         let username=this.username.value;
         let password=this.password.value;
-        this.props.reg({tel,username,password})
+        this.props.reg({tel,username,password});
+
     }
   render() {
     return (
@@ -23,11 +24,11 @@ export default class Reg extends Component {
                 </div>
                 <form action="">
                     <ul className="message">
-                        <input ref={input=>this.tel=input} type="tel" placeholder="输入手机号" pattern="[0-9]{11}" required/>
-                        <input ref={input=>this.username=input} type="username" placeholder="输入用户名" pattern="[0-9A-Za-z]{6,25}" required/>
-                        <input  ref={input=>this.password=input} type="password" placeholder="请输入6-25位密码" pattern="[0-9A-Za-z]{6,25}" required/>
-                        <input type="password" placeholder="请再次输入密码" pattern="[0-9A-Za-z]{6,25}" required/>
-                        <input type="text" placeholder="输入验证码" pattern="[0-9]{6}" required/>
+                        <input ref={input=>this.tel=input} type="tel" placeholder="输入手机号" pattern="[0-9]{11}" />
+                        <input ref={input=>this.username=input} type="username" placeholder="输入用户名" pattern="[0-9A-Za-z]{6,25}" />
+                        <input  ref={input=>this.password=input} type="password" placeholder="请输入6-25位密码" pattern="[0-9A-Za-z]{6,25}" />
+                        <input type="password" placeholder="请再次输入密码" pattern="[0-9A-Za-z]{6,25}" />
+                        <input type="text" placeholder="输入验证码" pattern="[0-9]{6}" />
                         <div className="icons">
                             <b className="iconfont icon-shouji54"></b>
                             <b className="iconfont icon-yonghuming"></b>
