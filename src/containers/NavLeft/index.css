@@ -12,11 +12,11 @@ img{
 }
 .navLeft li {
     margin: 0 .05rem .15rem 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navLeft i {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0 .1rem;
 }
 .user{
@@ -31,13 +31,13 @@ img{
     margin: .20rem 0 0 1.10rem;
 }
 .user div{
-    background: #3b8bff;
+    background: #ffbf51;
     width: 1rem;
     height: .30rem;
     text-align: center;
     line-height: .30rem;
     margin: .10rem auto;
-    opacity: .5;
+
 
 }
 .user div a{

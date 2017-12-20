@@ -3,9 +3,13 @@
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background-color: lightgrey;
+  background-color: #f6f6f6;
   margin-top: 10px;
   border-radius: 5px;
+    position: fixed;
+    top: 120px;
+    left: 0;
+  opacity: .6;
 }
 .alert.default {
     color: black;

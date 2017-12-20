@@ -38,15 +38,17 @@ export function get(url){
 //             console.log('Fetch Error :-S', err);
 //     });
 // }
-export function post(url,id) {
+export function post(url,data) {
         return fetch(HOST+url, {
             method: 'POST',
+            credentials:"include",//向服务器发送cookie
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({'id':id})
+            body: JSON.stringify(data)
         }).then((response) => {
+            return response.json();
              console.log(response.json());
         }).catch((err) => {
                 dispatch(success({
