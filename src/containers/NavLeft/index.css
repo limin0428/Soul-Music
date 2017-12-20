@@ -12,11 +12,19 @@ img{
 }
 .navLeft li {
     margin: 0 .05rem .15rem 0;
+<<<<<<< HEAD
     font-size: .2rem;
 }
 
 .navLeft i {
     font-size: .2rem;
+=======
+    font-size: 14px;
+}
+
+.navLeft i {
+    font-size: 14px;
+>>>>>>> 20334bab25547c8105186b803bd6a7ba961f94fd
     margin: 0 .1rem;
 }
 .user{

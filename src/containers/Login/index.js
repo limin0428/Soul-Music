@@ -24,13 +24,21 @@ import Alert from '../../components/Alert/'
                          <label htmlFor="username">用户名：</label>
                          <input
                              ref={input=>this.username=input}
+<<<<<<< HEAD
                              type="text"  placeholder="请输入用户名" pattern="[0-9A-Za-z]{6,16}" required/>
+=======
+                             type="text" name="usernamename" placeholder="请输入用户名" pattern="[0-9A-Za-z]{6,16}" required/>
+>>>>>>> 20334bab25547c8105186b803bd6a7ba961f94fd
                      </div>
                      <div className="passWord">
                          <label htmlFor="password">密&nbsp;&nbsp;码：</label>
                          <input
                              ref={input=>this.password=input}
+<<<<<<< HEAD
                              type="password"  placeholder="请输入密码" pattern="[0-9A-Za-z]{6,25}" required/>
+=======
+                             type="password" name="password" placeholder="请输入密码" pattern="[0-9A-Za-z]{6,25}" required/>
+>>>>>>> 20334bab25547c8105186b803bd6a7ba961f94fd
                      </div>
                      <div className="choose_box">
                          <div>

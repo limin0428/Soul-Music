@@ -6,6 +6,13 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <content url="file://$MODULE_DIR$/node_modules" />
+=======
+>>>>>>> arka
+>>>>>>> 20334bab25547c8105186b803bd6a7ba961f94fd
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
