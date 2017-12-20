@@ -26,7 +26,7 @@ export default {
                     payload:{success,error,user}
                 });
                 if(code==0){
-                    dispatch(push('/profile'))
+                    dispatch(push('/navleft'))
                 }
             })
         }
