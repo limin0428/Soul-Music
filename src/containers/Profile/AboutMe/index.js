@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
-export default class AboutMe extends Component{
+import Single from "./Single/Single";
+
+export default class App extends Component{
     render(){
         return (
             <div>
-                {/*AboutMe*/}
+                <Single/>
             </div>
         )
     }
