@@ -1,0 +1,68 @@
+.controls-main{
+ z-index: 3;
+}
+
+.controls-progress{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.controls{
+    display: flex;
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom: 0.7rem;
+    z-index: 6;
+}
+.controls span{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.controls-footer{
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom: 0.1rem;
+    z-index: 4;
+}
+.controls-start{
+}
+
+.icon-play{
+    font-size: 0.5rem;
+    color: #fff;
+}
+.icon-pause{
+    font-size: 0.5rem;
+    color: #fff;
+}
+.icon-prev{
+    font-size:0.3rem;
+    color: #ffffff;
+
+}
+.icon-next{
+    font-size:0.3rem;
+    color: #fff;
+}
+.icon-list{
+    font-size: 0.26rem;
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.1rem;
+    color: #fff;
+}
+.icon-left{
+    font-size: 0.28rem;
+    position: absolute;
+    left: 0.6rem;
+    bottom: 0.1rem;
+    color: #fff;
+}
