@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import './index.less'
+import './index.less';
+import {Link} from 'react-router-dom';
 export default class HomeFooter extends Component{
   constructor(){
     super();
@@ -85,6 +86,7 @@ export default class HomeFooter extends Component{
       );
         return (
             <div className="home-footer">
+              <Link to="/songle">
               <div className="home-song">
                 <div>
                   <img src={require('../../../../image/fengmian.jpg')}/>
@@ -94,6 +96,7 @@ export default class HomeFooter extends Component{
                   <p className="home-song-lyrics">这是为什么</p>
                 </div>
               </div>
+              </Link>
               {
                 this.state.isShow?showList:null
               }

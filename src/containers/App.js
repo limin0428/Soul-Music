@@ -6,6 +6,8 @@ import LogOrReg from "./LogOrReg/index";
 import NavLeft from "./NavLeft/index";
 import PersonalCenter from "./Profile/PersonalCenter/index";
 import Home from "./Home/index";
+import Single from "./Single/Single";
+import Search from "./Serach/index";
 
 
 export default class App extends Component{
@@ -16,9 +18,11 @@ export default class App extends Component{
                     <Route exact path="/" component={Home}/>
                     <Route path="/personalcenter" component={PersonalCenter}/>
                     <Route path="/logorreg" component={LogOrReg}/>
+                    <Route path="/songle" component={Single}/>
                     <Route path="/navleft" component={NavLeft}/>
                     <Route path="/login" component={Login}/>
                     <Route path="/reg" component={Reg}/>
+                    <Route path="/serach" component={Search}/>
                 </div>
             </Router>
         )

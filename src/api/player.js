@@ -5,4 +5,4 @@ import {get, post} from './index';
 export function getPlayList(id) {
     return post('/music',id);
 }
-getPlayList(347232);
+getPlayList(467668);

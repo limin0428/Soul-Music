@@ -19,7 +19,9 @@ export default class HomeTab extends Component{
                   <i className="iconfont icon-huati"></i>
                 </div>
                 <div className="tab-search">
+                  <Link to="/search">
                   <i className="iconfont icon-sousuo"></i>
+                  </Link>
                 </div>
               </div>
               <div className="tab-nav">

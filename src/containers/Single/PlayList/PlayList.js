@@ -5,7 +5,9 @@ import {getPlayList} from "../../../api/player";
 export default class PlayList extends Component{
 
     componentDidMount(){
-       getPlayList()
+       getPlayList();
+      let data=getPlayList();
+      console.log(data);
 
     }
     render(){
