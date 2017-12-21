@@ -38,6 +38,7 @@ app.use(function (req, res, next) {
         next();
     }
 });
+//
 // 获取首页轮播图数据
 // app.get('/sliders',function (req,res) {
 //     console.log(sliders.banners);
