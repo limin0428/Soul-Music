@@ -58,7 +58,7 @@ app.get('/songmenudetail',function (req,res) {
 app.get('/rankList',function (req,res) {
     res.json(rankList.playlist);
 });
-// 获取精品歌单
+// 获取精品歌单 
 app.get('/playlist',function (req,res) {
     res.json(playlist.playlists);
 });

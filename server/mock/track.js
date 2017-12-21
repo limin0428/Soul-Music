@@ -57,7 +57,7 @@ module.exports = {
                 "song":
                     {
                         "id": 32785700,
-                        "url": "http://dl.stream.qqmusic.qq.com/C400002ahGF64OFdfh.m4a?vkey=B01DEF802702A31976877A8587C0234EC1E2BEFFC934CA5C45260B38E5EBAD07D362AACC0D57A6220C609BE4A34DF46C717C88A3954D76AB&guid=9111729110&uin=0&fromtag=66",
+                            "url": "·",
                         "br": 128000,
                         "duration": 1280,
                         "size": 4057696,
