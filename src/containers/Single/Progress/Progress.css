@@ -5,7 +5,8 @@
     position: absolute;
     left: 0.1rem;
     bottom: 1.3rem;;
-    z-index: 4;
+    z-index: 5;
+    overflow: hidden;
 }
 
 .current,.duration{
@@ -14,10 +15,12 @@
     height: 0.6rem;
     line-height: 0.6rem;
     font-size: 0.2rem;
-    z-index: 4;
+    z-index: 5;
+    overflow: hidden;
 
 }
 .timeLine{
+    position: relative;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -26,13 +29,20 @@
     height: 0.04rem;
     background-color: #7ebaff;
     margin-top: 0.29rem;
+    overflow: hidden;
 }
-.timeLine .span{
-    position: absolute;
+.timeLine .progress-line{
+ position: absolute;
+    top:0;
+    left:0;
     width: 0;
     height: 0.04rem;
-    background-color: #82cc98;
+    background-color: red;
     transition: linear 1s;
     transition-property:all;
+    z-index: 5;
+    overflow: hidden;
+
+
 }
 

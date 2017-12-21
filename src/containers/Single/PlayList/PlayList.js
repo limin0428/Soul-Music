@@ -7,7 +7,13 @@ import actions from "../../../store/actions/playList";
 
     componentWillMount(){
         this.props.fetchPlayList();
+
     }
+    componentDidUpdate(){
+         if (this.props.itemIndex==0){
+             this.props.handleChangeSong(0)
+         }
+     }
      changeSong=(id)=> {
          let nowSong= this.props.playList.tracks.find(item => item.id == id);
      }
@@ -26,7 +32,7 @@ import actions from "../../../store/actions/playList";
                     <ul className='play-listBody'>
                         {
                             this.props.playList.tracks.map((item,index)=>(
-                                <li className='play-listContent' key={index} onClick={()=>this.props.handleChangeSong(index)}>
+                                <li className='play-listContent' key={index} onClick={()=>this.props.handleChangeSong(index||0)}>
                                     <span>{item.ar[0].name}</span>
                                     <span>-</span>
                                     <span>{item.name}</span>

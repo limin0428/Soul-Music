@@ -54,13 +54,12 @@ module.exports = {
                     "pic_str": "109951163041870079",
                     "pic": 109951163041870079
                 },
-                "song":
-                    {
+                song:{
                         "id": 32785700,
-                        "url": "http://m10.music.126.net/20171220132202/5c9e8b9c3e057f88fd9a6221dc56ee54/ymusic/05f8/d731/df55/c7de3b8a3b77ace8cb440e80d2e43ac2.mp3",
+                        "url":"http://m10.music.126.net/20171220171508/a5a2ad0f73074ce25b1f939b4eb3d3af/ymusic/05f8/d731/df55/c7de3b8a3b77ace8cb440e80d2e43ac2.mp3",
                         "br": 128000,
-                        "duration": 1280,
-                        "size": 4057696,
+                        "duration": 267,
+                        "size": 4303351,
                         "md5": "078e0e759d05f637bc946f146697f5d2",
                         "code": 200,
                         "expi": 1200,
@@ -124,9 +123,10 @@ module.exports = {
                 },
                 song: {
                     "id": 513054055,
-                    "url": "http://m10.music.126.net/20171220134015/c8b0cf952a121cce7e6bb08e43e9e036/ymusic/c305/6cf1/68e9/3fdef4dbda00d72f64c97c34d766aae4.mp3",
+                    "url": "http://m10.music.126.net/20171220172801/d56ed2a9ae0fa642708436f0afa1ffa0/ymusic/c305/6cf1/68e9/3fdef4dbda00d72f64c97c34d766aae4.mp3",
                     "br": 128000,
                     "size": 5339472,
+                    "duration":333,
                     "md5": "3fdef4dbda00d72f64c97c34d766aae4",
                     "code": 200,
                     "expi": 1200,
@@ -191,9 +191,10 @@ module.exports = {
                 },
                 song: {
                     "id": 507364098,
-                    "url": "http://m10.music.126.net/20171220134058/185edd4d5961e31b4619b9e1d0bfd7a6/ymusic/c4ca/abfe/055e/977403ebb8d4d9119f639930927c19fc.mp3",
+                    "url": "http://m10.music.126.net/20171220172927/decea0e74845c25169231c0c85742284/ymusic/c4ca/abfe/055e/977403ebb8d4d9119f639930927c19fc.mp3",
+                    "duration":325,
                     "br": 128000,
-                    "size": 5339472,
+                    "size": 5200710,
                     "md5": "3fdef4dbda00d72f64c97c34d766aae4",
                     "code": 200,
                     "expi": 1200,
@@ -255,7 +256,9 @@ module.exports = {
                     "pic": 109951163037253106
                 },
                 song:{
-                    "url":"http://m10.music.126.net/20171220134232/e6ecd14805b0aab185aec760ecf8222b/ymusic/a205/fa83/086e/e78e10fe545ac11a255d1fcc28406ee2.mp3"
+                    "url":"http://m10.music.126.net/20171220173029/940763bb51ecf9c75c319c7363b0b97c/ymusic/a205/fa83/086e/e78e10fe545ac11a255d1fcc28406ee2.mp3",
+                    "size":4636047,
+                    "duration":289,
                 },
                 "dt": 289680,
                 "h": {"br": 320000, "fid": 0, "size": 11590052, "vd": 0.0},
@@ -298,6 +301,11 @@ module.exports = {
                     "pic_str": "109951163039618302",
                     "pic": 109951163039618302
                 },
+                song:{
+                  "url":"http://m10.music.126.net/20171220173200/8a2e5669b06d3bed3880d69fe98c4c45/ymusic/4041/c9d2/c4e3/fdd45c11901469f384605d29e1c78a33.mp3",
+                    "size":12772876,
+                    "duration":319,
+                },
                 "dt": 319259,
                 "h": {"br": 320000, "fid": 0, "size": 12772876, "vd": -1.0},
                 "m": {"br": 192000, "fid": 0, "size": 7663743, "vd": -1.0},
@@ -338,6 +346,12 @@ module.exports = {
                     "pic_str": "109951163040409595",
                     "pic": 109951163040409595
                 },
+                song:{
+                    "url":"http://m10.music.126.net/20171220173256/76e278e4a29e9a13ca936d062a07386b/ymusic/c539/374c/a616/48232521a1edc4be13f8e103a6edbd15.mp3",
+                    "br":128000,
+                    "size":4447547,
+                    "duration":277,
+                },
                 "dt": 277942,
                 "h": {"br": 320000, "fid": 0, "size": 11118803, "vd": 0.0},
                 "m": {"br": 192000, "fid": 0, "size": 6671299, "vd": 0.0},
@@ -377,6 +391,12 @@ module.exports = {
                     "tns": [],
                     "pic_str": "109951163032518813",
                     "pic": 109951163032518813
+                },
+                song:{
+                    "url":"http://m10.music.126.net/20171220173611/16715c8bd804883d7dc79cdc888ae2fc/ymusic/0f85/a87f/3e40/b765eced59ed0fa4b4ef3e3d66533c27.mp3",
+                    "br":320000,
+                    "size":10290199,
+                    "duration":257,
                 },
                 "dt": 257200,
                 "h": {"br": 320000, "fid": 0, "size": 10290199, "vd": -1.0},
@@ -423,6 +443,12 @@ module.exports = {
                     "pic_str": "109951163041270048",
                     "pic": 109951163041270048
                 },
+                song:{
+                    "url":"http://m10.music.126.net/20171220173651/59fb95c23564063a37d861b612cb997e/ymusic/30ab/5d61/0874/beedf4d5625f6f52cbeaa70cacca8c0d.mp3",
+                    "br":320000,
+                    "size":8981987,
+                    "duration":224,
+                },
                 "dt": 224470,
                 "h": {"br": 320000, "fid": 0, "size": 8981987, "vd": 0.0},
                 "m": {"br": 192000, "fid": 0, "size": 5389209, "vd": 0.0},
@@ -463,6 +489,12 @@ module.exports = {
                     "pic_str": "109951163040208287",
                     "pic": 109951163040208287
                 },
+                song:{
+                    "url":"http://m10.music.126.net/20171220173738/1068546c3ff254f0002b17c03cc7f3ba/ymusic/3078/87e0/799c/a33a704f53519983cb7b874986ecb140.mp3",
+                    "br":320000,
+                    "size":11115668,
+                    "duration":277,
+                },
                 "dt": 277836,
                 "h": {"br": 320000, "fid": 0, "size": 11115668, "vd": 0.0},
                 "m": {"br": 192000, "fid": 0, "size": 6669418, "vd": 0.0},
@@ -502,6 +534,12 @@ module.exports = {
                     "tns": [],
                     "pic_str": "109951163042670241",
                     "pic": 109951163042670241
+                },
+                song:{
+                    "url":"http://m10.music.126.net/20171220173738/1068546c3ff254f0002b17c03cc7f3ba/ymusic/3078/87e0/799c/a33a704f53519983cb7b874986ecb140.mp3",
+                    "br":320000,
+                    "size":11115668,
+                    "duration":290,
                 },
                 "dt": 290500,
                 "h": {"br": 320000, "fid": 0, "size": 11622444, "vd": -1.0},
@@ -544,7 +582,9 @@ module.exports = {
                     "pic": 109951163037665215
                 },
                 song:{
-                    "url":"http://m10.music.126.net/20171220153225/ed576c316e9885012e54758747876d2c/ymusic/fdb3/c3db/5468/775f73f9c4f00a7ade86d93555fdc9b9.mp3"
+                    "url":"http://m10.music.126.net/20171220153225/ed576c316e9885012e54758747876d2c/ymusic/fdb3/c3db/5468/775f73f9c4f00a7ade86d93555fdc9b9.mp3",
+                    "size":3917993,
+                    "duration":244,
                 },
                 "dt": 244813,
                 "h": {"br": 320000, "fid": 0, "size": 9794917, "vd": -2.0},
@@ -586,6 +626,12 @@ module.exports = {
                     "pic_str": "109951163042420867",
                     "pic": 109951163042420867
                 },
+                song:{
+                    "url":"http://m10.music.126.net/20171220173950/0606888d1d0d182ea20126d21d1ffd2e/ymusic/043c/4cb5/6bc4/b8521b85d30f29b481d5b622e11a3406.mp3",
+                    "br":320000,
+                    "size":10614117,
+                    "duration":265,
+                },
                 "dt": 265287,
                 "h": {"br": 320000, "fid": 0, "size": 10614117, "vd": -1.0},
                 "m": {"br": 192000, "fid": 0, "size": 6368488, "vd": 0.0},
@@ -625,6 +671,12 @@ module.exports = {
                     "tns": [],
                     "pic_str": "109951163041316274",
                     "pic": 109951163041316274
+                },
+                song:{
+                    "url":"http://m10.music.126.net/20171220174025/de3bfcc88efaa1b19278b7e3cd7ea1d2/ymusic/4b5e/4e77/4546/4788143bcf755a5609e90cfeb8c95bca.mp3",
+                    "br":320000,
+                    "size":9848207,
+                    "duration":246,
                 },
                 "dt": 246144,
                 "h": {"br": 320000, "fid": 0, "size": 9848207, "vd": 0.0},
@@ -666,6 +718,12 @@ module.exports = {
                     "pic_str": "109951163040445240",
                     "pic": 109951163040445240
                 },
+                song:{
+                    "url":"http://m10.music.126.net/20171220174101/40a832aecae784837553e8d67fb5a99b/ymusic/1f71/7eab/1a9d/ebfccef63a23eba240c5d46c0604b0ee.mp3",
+                    "br":320000,
+                    "size":8449089,
+                    "duration":211,
+                },
                 "dt": 211153,
                 "h": {"br": 320000, "fid": 0, "size": 8449089, "vd": 0.0},
                 "m": {"br": 192000, "fid": 0, "size": 5069471, "vd": 0.0},
@@ -705,6 +763,12 @@ module.exports = {
                     "tns": [],
                     "pic_str": "18415720254201596",
                     "pic": 18415720254201596
+                },
+                song:{
+                "url":"http://m10.music.126.net/20171220174155/e4792888617b794a1cf81f1396d51abf/ymusic/575a/393a/9bfc/fda7901e5fb958db1af4c7931f1490d1.mp3",
+                    "br":128000,
+                    "size":3916321,
+                    "duration":244,
                 },
                 "dt": 246073,
                 "h": {"br": 320000, "fid": 0, "size": 9844027, "vd": -1.0},
@@ -746,6 +810,12 @@ module.exports = {
                     "pic_str": "109951163041380790",
                     "pic": 109951163041380790
                 },
+                song:{
+                    "url":"http://m10.music.126.net/20171220174238/81cc985f0ca18db5e0253836133beee6/ymusic/e79f/60f4/a787/022e63abfd150ffb7d041e4326e7cabd.mp3",
+                    "br":320000,
+                    "size":9112599,
+                    "duration":227,
+                },
                 "dt": 227735,
                 "h": {"br": 320000, "fid": 0, "size": 9112599, "vd": -2.0},
                 "m": {"br": 192000, "fid": 0, "size": 5467577, "vd": -2.0},
@@ -785,6 +855,12 @@ module.exports = {
                     "tns": [],
                     "pic_str": "109951163033906502",
                     "pic": 109951163033906502
+                },
+                song:{
+                    "url":"http://m10.music.126.net/20171220174328/d31174d8d59bd8ce32a7d4db7b960819/ymusic/58b0/7f46/bd18/0c3cdae496c141b42904a557e5de4bc3.mp3",
+                    "br":320000,
+                    "size":8318476,
+                    "duration":207,
                 },
                 "dt": 207900,
                 "h": {"br": 320000, "fid": 0, "size": 8318476, "vd": -2.0},
@@ -826,7 +902,12 @@ module.exports = {
                     "pic_str": "109951163040702130",
                     "pic": 109951163040702130
                 },
-
+song:{
+    "url":"http://m10.music.126.net/20171220174404/ba29586d13e14c72fbe5521fcd4faa0f/ymusic/85f6/da24/7c16/d58fdf0dc9d50ff5d0c7bc0ca7c21e32.mp3",
+    "br":320000,
+    "size":9041546,
+    "duration":226,
+},
                 "dt": 225962,
                 "h": {"br": 320000, "fid": 0, "size": 9041546, "vd": -3.0},
                 "m": {"br": 192000, "fid": 0, "size": 5424945, "vd": -2.0},
