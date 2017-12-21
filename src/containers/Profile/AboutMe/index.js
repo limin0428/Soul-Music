@@ -1,26 +1,12 @@
-
-
-
-
-
 import React,{Component} from 'react';
 import {HashRouter as Router,Route} from 'react-router-dom'
-
-
-import Home from "../../Home/Home";
-import Search from "../../Search/index";
-export default class App extends Component {
+export default class AboutMe extends Component {
     render() {
         return (
-
-            <Router>
-                <div>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/search" component={Search} />
-                </div>
-            </Router>
-
-
+            <div>
+                <div>关于我自己</div>
+                <div>详情</div>
+            </div>
         )
     }
 }
