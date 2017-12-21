@@ -5,7 +5,6 @@ import Audio from "./Audio/Audio";
 import MusicInfo from "./MusicInfo/MusicInfo";
 import actions from "../../store/actions/playList";
 import {connect} from 'react-redux'
-// const songUrl=require('./Audio/audio/demo.m4a');
 class Single extends Component {
     constructor() {
         super();
@@ -72,7 +71,6 @@ class Single extends Component {
     }
     componentWillMount(){
         this.props.fetchPlayList();
-
     }
     componentDidUpdate(){
         if(this.state.currentTime>this.state.currentTolTime){
@@ -97,6 +95,8 @@ class Single extends Component {
                 <MusicInfo isPlay={this.state.isPlay}
                            picUrl={this.state.picUrl}
                            currentTrackIndex={this.state.currentTrackIndex}
+                           itemIndex={this.itemIndex}
+
                 />
                     <Control isPlay={this.state.isPlay}
                              handlePlay={this.handlePlay}

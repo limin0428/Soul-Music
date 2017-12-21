@@ -19,18 +19,18 @@ export default class Progress extends Component{
         this.props.handleChangeProgress(nowTime);
 
     }
-    componentDidUpdateMount(){
-        if(this.props.currentTime>=this.props.currentTolTime){
-            this.props.handleChangeSong(this.props.currentTrackIndex+1)
-        }
-    }
+    // componentDidUpdateMount(){
+    //     if(this.props.currentTime>=this.props.currentTolTime){
+    //         this.props.handleChangeSong(this.props.currentTrackIndex+1)
+    //     }
+    // }
     render(){
         return (
             <div>
                 <div className="music-progress">
                     <div className="current">{this.timeConvert(this.props.currentTime)}</div>
                     <div className="timeLine"  onTouchStart={this.handleTouch}>
-                        <span className='progress-line' style={{width:this.props.currentTime/this.props.currentTolTime*100+'%'}}> </span>
+                        <span className='progress-line' style={this.props.currentTime>this.props.currentTolTime?{display:"none"}:{width:this.props.currentTime/this.props.currentTolTime*100+'%',display:"block"}}> </span>
                     </div>
                     <div className="duration">{this.timeConvert(this.props.currentTolTime)}</div>
                 </div>
