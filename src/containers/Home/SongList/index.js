@@ -6,10 +6,11 @@ export default class SongList extends Component {
         let PlayListId = id;
     };
     render() {
+        console.log(this.props.PlayList,"33333");
         return (
             <div className="songBox">
                 <div className="song-list">
-                    <h3><i></i>推荐歌单 ></h3>
+                    <h3><i> </i>推荐歌单 ></h3>
                     <div className="song-recommend">
                         {
                             this.props.PlayList.map(item=>(
@@ -26,7 +27,7 @@ export default class SongList extends Component {
                     </div>
                 </div>
                 <div className="song-list">
-                    <h3><i></i>独家放送 ></h3>
+                    <h3><i> </i>独家放送 ></h3>
                     <div className="song-recommends">
                         {
                             this.props.Mv.map(item => (

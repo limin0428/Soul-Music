@@ -13,35 +13,6 @@ export function get(url){
     }).then(res=> res.json())//把响应体转成json
 }
 
-
-//url后台地址 data 请求体
-//
-//export function post(url,id) {
-//     console.log(id);
-//     // return fetch(HOST+url, {
-//     //     method:'POST',
-//     //     headers: {
-//     //         'Accept': 'application/json',
-//     //         'Content-Type': 'application/json'
-//     //     },
-//     //     body:JSON.stringify({'data':json})
-//     // }).then(res => res.json()).then(json =>dispatch(receivePosts(json))).catch(error=>dispatch(requestExceptions(error)));
-//
-//     return fetch(HOST+url,{
-//         method:'POST',//请求方法
-//         //credentials:"include",
-//         headers:{//请求头
-//
-//             "Accept":"application/json",//告诉服务器我客户端需要的数据类型
-//             "Content-Type":"application/json",
-//         },
-//         body:JSON.stringify({'id':id})//请求体格式
-//     }).then(function(response) {
-//         console.log(response.json());
-//     }).catch(function(err) {
-//             console.log('Fetch Error :-S', err);
-//     });
-// }
 export function post(url,data) {
 
         return fetch(HOST+url, {

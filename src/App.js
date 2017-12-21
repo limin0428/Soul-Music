@@ -14,6 +14,8 @@ import NewMusicList from './containers/Home/Music/NewMusicList/index';
 import RankingList from './containers/Home/Music/RankingList/index';
 import Recommend from './containers/Home/Music/Recommend/index';
 import SongMenuDetail from './containers/SongMenuDetail/index';
+import VideoList from './containers/Video/VideoList/index';
+import VideoPage from './containers/Video/VideoPage/index';
 import './app.css';
 let history =createHashHistory();
 export default class App extends Component{
@@ -24,7 +26,6 @@ export default class App extends Component{
                     <Route exact path="/" component={Home}/>
                     <Route path="/search" component={Search}/>
                     <Route path="/single" component={Single}/>
-
                     <Route path="/personalcenter" component={PersonalCenter}/>
                     <Route path="/logorreg" component={LogOrReg}/>
                     <Route path="/navleft" component={NavLeft}/>
@@ -34,9 +35,9 @@ export default class App extends Component{
                     <Route path="/rankinglist" component={RankingList}/>
                     <Route path="/recommend" component={Recommend}/>
                     <Route path="/songmenudetail" component={SongMenuDetail}/>
-
+                    <Route path="/video" component={VideoList}/>
+                    <Route path="/videopage" component={VideoPage}/>
                 </div>
-
             </ConnectedRouter>
         )
     }
