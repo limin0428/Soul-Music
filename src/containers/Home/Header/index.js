@@ -1,11 +1,27 @@
 import React, {Component} from 'react';
 import "./index.css"
-import  {Link} from "react-router-dom"
+import  {Link} from "react-router-dom";
+import NavLeft from '../../../containers/NavLeft/index';
+
 export default class Header extends Component {
+    constructor(){
+        super();
+        this.state={isShows:false}
+    }
+    handleClick=()=>{
+        this.setState({isShows:!this.state.isShows});
+
+
+    }
     render() {
         return (
             <div className="header">
-              <i className="iconfont icon-maikefeng1" >
+              <i
+                  onClick={this.handleClick}
+                  className="iconfont icon-maikefeng1" >
+                  {
+                      this.state.isShows?<NavLeft state={this.state}/>:null
+                  }
                 </i>
                 <i className="iconfont icon-yinle">
 

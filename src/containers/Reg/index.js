@@ -11,10 +11,7 @@ class Reg extends Component {
         let username = this.username.value;
         let password = this.password.value;
         this.props.reg({tel, username, password});
-
-
     }
-
     render() {
         return (
             <div className="register">

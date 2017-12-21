@@ -3,8 +3,7 @@ import{HashRouter as Router,Route} from 'react-router-dom';
 import Login from "./containers/Login/index";
 import Reg from "./containers/Reg/index";
 import LogOrReg from "./containers/LogOrReg/index";
-import NavLeft from "./containers/NavLeft/index";
-import PersonalCenter from "./containers/Profile/PersonalCenter/index";
+import Profile from "./containers/Profile/index";
 import createHashHistory from '../node_modules/history/createHashHistory';
 import {ConnectedRouter} from 'react-router-redux'
 import Home from "./containers/Home/Home";
@@ -15,6 +14,10 @@ import RankingList from './containers/Home/Music/RankingList/index';
 import Recommend from './containers/Home/Music/Recommend/index';
 import SongMenuDetail from './containers/SongMenuDetail/index';
 import './app.css';
+import MyInfoData from "./containers/Profile/MyInfoData/index";
+import CollectionSongList from "./containers/Profile/CollectionSongList/index";
+import PersonalDynamic from "./containers/Profile/PersonalDynamic/index";
+import AboutMe from "./containers/Profile/AboutMe/index";
 let history =createHashHistory();
 export default class App extends Component{
     render(){
@@ -24,10 +27,12 @@ export default class App extends Component{
                     <Route exact path="/" component={Home}/>
                     <Route path="/search" component={Search}/>
                     <Route path="/single" component={Single}/>
-
-                    <Route path="/personalcenter" component={PersonalCenter}/>
+                    <Route path="/myinfo" component={MyInfoData}/>
+                    <Route path="/profile" component={Profile}/>
+                    <Route path="/profile/PersonalDynamic" component={PersonalDynamic}/>
+                    <Route path="/profile/AboutMe" component={AboutMe}/>
+                    <Route path="/profile/CollectionSongList" component={CollectionSongList}/>
                     <Route path="/logorreg" component={LogOrReg}/>
-                    <Route path="/navleft" component={NavLeft}/>
                     <Route path="/login" component={Login}/>
                     <Route path="/reg" component={Reg}/>
                     <Route path="/newmusiclist" component={NewMusicList}/>

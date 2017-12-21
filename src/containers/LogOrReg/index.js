@@ -5,9 +5,11 @@ export default class LogOrReg extends Component {
     render() {
         return (
             <div className="login_bg">
+                <div className="logor"></div>
                 <div id="logo">
-                    <img src={require('../../images/logo.png')}/>
+                    <i className="iconfont icon-yinyue1"></i>
                 </div>
+                <div className="logor"></div>
                 <Link className="login_btn" to="./login">登&nbsp;&nbsp;录</Link>
                 <Link className="login_btn" to="./reg">新&nbsp;&nbsp;手&nbsp;&nbsp;注&nbsp;&nbsp;册</Link>
                 <div className="other_login">
@@ -17,13 +19,13 @@ export default class LogOrReg extends Component {
                 </div>
                 <div className="other_choose">
                     <a href="">
-                        <img src={require('../../images/qq.png')}/>
+                        <i className="iconfont icon-qq"></i>
                     </a>
                     <a href="">
-                        <img src={require('../../images/wx.png')}/>
+                        <i className="iconfont icon-nickname"></i>
                     </a>
                     <a href="">
-                        <img src={require('../../images/wb.png')}/>
+                        <i className="iconfont icon-weibo"></i>
                     </a>
                 </div>
             </div>

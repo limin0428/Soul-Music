@@ -1,0 +1,86 @@
+.header-info{
+    width: 100%;
+    height: .6rem;
+    background: url("../../../images/bj11.png");
+}
+.header-info i{
+    font-size: .3rem;
+    color: #f0f0f0;
+    position: absolute;
+    top: .6em;
+    left: .6em;
+}
+.header-info span{
+    font-size: .25rem;
+    line-height: .6rem;
+    color: #f0f0f0;
+    padding-left: 1.3rem;
+}
+.info-list{
+    width: 100%;
+    position: fixed;
+    top: .6rem;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.info-list li{
+    width: 100%;
+    height: .50rem;
+    line-height: .50rem;
+    border-bottom: 1px solid #ebe8e9;
+    color: #000000;
+    font-size: .16rem;
+    padding-left: .20rem;
+}
+.info-list li img{
+    width: .40rem;
+    height: .40rem;
+    margin-right: .08rem;
+    vertical-align:middle;
+}
+.icon-erweima{
+    font-size: .18rem;
+    margin-right: .05rem;
+}
+.info-list li span{
+    float: right;
+    padding-right: .20rem;
+    margin-right: .08rem;
+    color: #9c9c9c;
+}
+.info-list .info-item-s{
+    width: 100%;
+    background: #bccde1;
+    height: .40rem;
+    line-height: .40rem;
+    font-size: .13rem;
+
+}
+.info-list .info-item-s p{
+    padding-left: .40rem;
+}
+.info-list .info-item-k{
+    width: 100%;
+    height: .20rem;
+    background: #f0f0f0;
+    border: none;
+}
+.info-list .info-item-k-w{
+    width: 100%;
+    height: .30rem;
+    background: #f0f0f0;
+    border: none;
+    font-size: .12rem;
+}
+.info-list .info-item-k-w p{
+    line-height: 0;
+    padding-top: .1rem;
+    color: #8d8d8d;
+}
+.info-list .info-item-g{
+    color: #8d8d8d;
+    height: 1.3rem;
+}
+.info-list .info-item-g span{
+    margin-top: .9rem;
+}

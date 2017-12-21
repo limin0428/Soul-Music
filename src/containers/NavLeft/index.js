@@ -15,8 +15,11 @@ class NavLeft extends Component {
         return (
             <ul className="navLeft">
                 <li className="user">
-                    <Link to="/personalcenter">
-                        <img src={require('../../images/1.jpg')}/>
+                    <Link to="/profile">
+                        {
+                            this.props.user?<img src={require('../../images/1.jpg')}/>:<img src={require('../../images/avater.jpg')}/>
+                        }
+
                     </Link>
                     <div>
                         {
