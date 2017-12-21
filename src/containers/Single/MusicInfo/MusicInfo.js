@@ -14,18 +14,11 @@ class MusicInfo extends Component {
     }
 
     componentDidUpdate(){
-    setInterval(()=>(
-        <p>
-            {
-              /\]([^\x00-\xff]+)/g.exec(this.props.playList.tracks[this.props.itemIndex].song.lrc.lyric)[1]
-            }
-        </p>
-    ),1000)
+
 }
     handleSong = () => {
         this.setState({isSong: !this.state.isSong})
     };
-
      reg=/\[\d{2}:\d{2}.\d{3}\]/g;
      regCn=/\]([^\x00-\xff]+)/g;
     musicInfo = () => (
@@ -63,7 +56,7 @@ class MusicInfo extends Component {
                         <div className='song-lrc'>
                             <p>
                                 {
-                                  this.regCn.exec(this.props.playList.tracks[this.props.itemIndex].song.lrc.lyric)[1]
+                                    this.props.playList.tracks[this.props.itemIndex].song.lrc.lyric?this.regCn.exec(this.props.playList.tracks[this.props.itemIndex].song.lrc.lyric)[1]:null
                                 }
                             </p>
                         </div>

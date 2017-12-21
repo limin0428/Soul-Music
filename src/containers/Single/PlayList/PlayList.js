@@ -14,8 +14,9 @@ import actions from "../../../store/actions/playList";
              this.props.handleChangeSong(0)
          }
      }
-     changeSong=(id)=> {
-         let nowSong= this.props.playList.tracks.find(item => item.id == id);
+     handleDelSong=(e,id)=>{
+        e.preventDefault();
+         this.props.playList.tracks.filter((item)=>item.id!==id)
      }
     render(){
         return (
@@ -36,7 +37,7 @@ import actions from "../../../store/actions/playList";
                                     <span>{item.ar[0].name}</span>
                                     <span>-</span>
                                     <span>{item.name}</span>
-                                    <span className='play-listDel'>×</span>
+                                    <span className='play-listDel' onTouchStart={this.handleDelSong}>×</span>
                                 </li>
                             ))
                         }

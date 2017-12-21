@@ -34,7 +34,6 @@ class Single extends Component {
             timestamp = minutes + ':' + seconds;
             return timestamp;
         }
-
     handlePlay=()=>{
         this.setState({isPlay:!this.state.isPlay});
     }
