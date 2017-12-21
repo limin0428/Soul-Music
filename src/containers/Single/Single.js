@@ -61,6 +61,8 @@ class Single extends Component {
     handleNext=()=>{
         if (this.itemIndex<this.props.playList.tracks.length-1){
             this.handleChangeSong(this.itemIndex+1)
+        }else{
+            this.setState({isPlay:false})
         }
     }
     handlePrev=()=>{
@@ -73,7 +75,6 @@ class Single extends Component {
 
     }
     componentDidUpdate(){
-        console.log("哈哈");
         if(this.state.currentTime>this.state.currentTolTime){
             console.log("进啦");
             this.handleNext()

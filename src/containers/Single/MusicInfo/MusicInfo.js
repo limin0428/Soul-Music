@@ -19,6 +19,8 @@ export default class MusicInfo extends Component {
                    </span>
                 <span className='sound-line'>
                         </span>
+                <span className='sound-lineBg'>
+                        </span>
             </div>
             <div className='song-lrc'>
                 <p>除非放下心中的负累</p>
