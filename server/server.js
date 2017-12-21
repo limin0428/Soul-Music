@@ -39,6 +39,7 @@ app.use(function (req, res, next) {
     }
 });
 //
+
 // 获取首页轮播图数据
 // app.get('/sliders',function (req,res) {
 //     console.log(sliders.banners);
@@ -64,6 +65,19 @@ app.use(function (req, res, next) {
 // app.get('/playlist',function (req,res) {
 //     res.json(playlist.playlists);
 // });
+
+app.get('/songmenudetail',function (req,res) {
+    res.json(track.playlist);
+});
+//
+app.get('/rankList',function (req,res) {
+    res.json(rankList.playlist);
+});
+// 获取精品歌单 
+app.get('/playlist',function (req,res) {
+    res.json(playlist.playlists);
+});
+
 
 
 
