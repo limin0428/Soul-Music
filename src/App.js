@@ -7,12 +7,17 @@ import NavLeft from "./containers/NavLeft/index";
 import PersonalCenter from "./containers/Profile/PersonalCenter/index";
 import createHashHistory from '../node_modules/history/createHashHistory';
 import {ConnectedRouter} from 'react-router-redux'
+import Home from "./containers/Home/Home";
+import Search from "./containers/Search/index";
 let history =createHashHistory();
 export default class App extends Component{
     render(){
         return (
             <ConnectedRouter history={history}>
                 <div>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/search" component={Search}/>
+
                     <Route path="/personalcenter" component={PersonalCenter}/>
                     <Route path="/logorreg" component={LogOrReg}/>
                     <Route path="/navleft" component={NavLeft}/>
