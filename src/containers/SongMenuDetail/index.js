@@ -10,12 +10,12 @@ export default class SongMenuDetail extends Component {
     return (
       <div className="container">
         <div className="detail-header">
-          <SongListsCover />
-          <SongListsInfo />
+          <SongListsCover/>
+          <SongListsInfo/>
         </div>
         <div className="detail-main">
-          <SongListsBar />
-          <SongLists />
+          <SongListsBar/>
+          <SongLists/>
         </div>
       </div>
     )
