@@ -8,7 +8,7 @@ body{
   font-size: 20px;
   width: 100%;
   padding:8% 0 6%;
-  background: #a7f91c;
+  background: #b7b4b5;
   text-align: center;
   color: #ffffff;
   position: relative;
@@ -94,7 +94,7 @@ select{
 .submit{
   width: 84%;
   margin: 2% 8%;
-  background: #f58c1a;
+  background: #9ca6ff;
   color: #ffffff;
   border: 0;
   padding: 3.25% 0;
