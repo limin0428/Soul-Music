@@ -13,6 +13,7 @@ import Single from "./containers/Single/Single";
 import NewMusicList from './containers/Music/NewMusicList/index';
 import RankingList from './containers/Music/RankingList/index';
 import Recommend from './containers/Music/Recommend/index';
+import SingerList from './containers/Music/SingerList/index';
 import SongMenuDetail from './containers/SongMenuDetail/index';
 import './app.css';
 
@@ -33,10 +34,9 @@ export default class App extends Component {
           <Route path="/newmusiclist" component={NewMusicList}/>
           <Route path="/rankinglist" component={RankingList}/>
           <Route path="/recommend" component={Recommend}/>
+          <Route path="/singerlist" component={SingerList}/>
           <Route path="/songmenudetail" component={SongMenuDetail}/>
-
         </div>
-
       </ConnectedRouter>
     )
   }
