@@ -15,6 +15,9 @@ export default class HomeFooter extends Component{
   changeShow=()=>{
     this.setState({isShow:!this.state.isShow})
   };
+  componentDidMount(){
+    console.log(this.state);
+  }
     render(){
       let showList=(
         <div className="home-song-list">
@@ -86,7 +89,7 @@ export default class HomeFooter extends Component{
       );
         return (
             <div className="home-footer">
-              <Link to="/songle">
+              <Link to="/single">
               <div className="home-song">
                 <div>
                   {/*<img src={require('../../../../image/fengmian.jpg')}/>*/}

@@ -39,7 +39,7 @@ export default {
                     type:types.LOGOUT,
                     payload:{success,error}
                 });
-                diapatch(push('/login'));
+                diapatch(push('/'));
             })
         }
     },

@@ -21,18 +21,28 @@ export default class App extends Component{
         return (
             <ConnectedRouter history={history}>
                 <div>
+                    {/*主页*/}
                     <Route exact path="/" component={Home}/>
+                    {/*搜索页*/}
                     <Route path="/search" component={Search}/>
+                    {/*播放页*/}
                     <Route path="/single" component={Single}/>
-
+                    {/*个人中心页  ==>来源：navleft*/}
                     <Route path="/personalcenter" component={PersonalCenter}/>
+                    {/*登录主页册  ==>navleft*/}
                     <Route path="/logorreg" component={LogOrReg}/>
                     <Route path="/navleft" component={NavLeft}/>
+                    {/*登录页*/}
                     <Route path="/login" component={Login}/>
+                    {/*注册页*/}
                     <Route path="/reg" component={Reg}/>
+
                     <Route path="/newmusiclist" component={NewMusicList}/>
+
                     <Route path="/rankinglist" component={RankingList}/>
+
                     <Route path="/recommend" component={Recommend}/>
+
                     <Route path="/songmenudetail" component={SongMenuDetail}/>
 
                 </div>
