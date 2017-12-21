@@ -18,6 +18,7 @@
 
 }
 .timeLine{
+    position: relative;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -27,12 +28,17 @@
     background-color: #7ebaff;
     margin-top: 0.29rem;
 }
-.timeLine .span{
-    position: absolute;
+.timeLine .progress-line{
+ position: absolute;
+    top:0;
+    left:0;
     width: 0;
     height: 0.04rem;
-    background-color: #82cc98;
+    background-color: red;
     transition: linear 1s;
     transition-property:all;
+    z-index: 4;
+
+
 }
 

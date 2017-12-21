@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './Progress.css'
+import Audio from "../Audio/Audio";
 export default class Progress extends Component{
     timeConvert=(timestamp)=>{
         var minutes = Math.floor(timestamp / 60);
@@ -12,13 +13,24 @@ export default class Progress extends Component{
         timestamp = minutes + ':' + seconds;
         return timestamp;
     }
+
+    handleTouch=(e)=>{
+        let nowTime=(e.targetTouches[0].pageX-e.target.offsetLeft)/(e.target.offsetWidth)*this.props.currentTolTime;
+        this.props.handleChangeProgress(nowTime);
+
+    }
+    componentDidUpdateMount(){
+        if(this.props.currentTime>=this.props.currentTolTime){
+            this.props.handleChangeSong(this.props.currentTrackIndex+1)
+        }
+    }
     render(){
         return (
             <div>
                 <div className="music-progress">
                     <div className="current">{this.timeConvert(this.props.currentTime)}</div>
-                    <div className="timeLine">
-                        <span className='progress-line' > </span>
+                    <div className="timeLine"  onTouchStart={this.handleTouch}>
+                        <span className='progress-line' style={{width:this.props.currentTime/this.props.currentTolTime*100+'%'}}> </span>
                     </div>
                     <div className="duration">{this.timeConvert(this.props.currentTolTime)}</div>
                 </div>
