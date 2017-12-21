@@ -8,6 +8,7 @@ export function get(url){
         credentials:"include",//向服务器发送cookie
         headers:{
             "Accept":"application/json",//请求头
+            'Content-Type': 'application/json'
         }
     }).then(res=> res.json())//把响应体转成json
 }
@@ -19,7 +20,7 @@ export function post(url,id) {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({'id':id})
+            body: JSON.stringify(id)
         }).then(res=>res.json())
     }
 

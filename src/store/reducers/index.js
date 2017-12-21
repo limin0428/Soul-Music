@@ -1,6 +1,7 @@
 import {combineReducers} from 'redux';
-import {playList} from './playList'
+import {playList} from './playList';
+import {Sliders} from  "./home"
 let reducers=combineReducers({
-    playList
+    playList,Sliders
 });
 export default reducers;
