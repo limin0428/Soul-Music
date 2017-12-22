@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './index.css';
 import SongView from '../../../../components/SongView/index';
-import HomeTab from "../../../../components/HomeTab/index";
+import Tab from "../../../../components/Tab/index";
 
 import {getPersonalized} from '../../../../api/home'
 
@@ -20,7 +20,7 @@ export default class RecList extends Component {
 
         return (
             <div>
-                <HomeTab/>
+                <Tab title="新碟首发"/>
                 <div className="RecList">
                     <SongView personalized={this.state.personalized} />
                 </div>

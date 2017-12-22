@@ -15,6 +15,7 @@ export default class SongMenuDetail extends Component {
         let id = /id=(\d+)/.exec(window.location.hash)[1];
         this.setState({did:id});
         getSongMenuDetail(id).then(res => {
+            console.log(res);
             this.setState({music: res});
         });
     }
@@ -22,7 +23,9 @@ export default class SongMenuDetail extends Component {
         return (
             this.state.music.code ? <div className="musica">
                 <div className="containers">
-                    <div className="container_bg"  style={{background: `url(${this.state.music.playlist.coverImgUrl}) center`, opacity: .8}}></div>
+                    <Tab/>
+                    <div className="container_bg"  style={{background: `url(${this.state.music.playlist.coverImgUrl}) center`, opacity: .8}}>
+                    </div>
                     <div className="detail-header">
                         <div className="songlists-title">
                             <div className="songlists-avater">
@@ -50,26 +53,4 @@ export default class SongMenuDetail extends Component {
             </div> : null
         )
     }
-
-/*import SongListsCover from '../../components/SongListsCover/index';
-import SongLists from '../../components/SongLists/index';
-import SongListsBar from '../../components/SongListsBar/index';
-import SongListsInfo from '../../components/SongListsInfo/index';
-
-export default class SongMenuDetail extends Component {
-  render() {
-    return (
-      <div className="container">
-        <div className="detail-header">
-          <SongListsCover />
-          <SongListsInfo />
-        </div>
-        <div className="detail-main">
-          <SongListsBar />
-          <SongLists />
-        </div>
-      </div>
-    )
-  }*/
-
 }

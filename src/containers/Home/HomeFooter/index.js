@@ -86,14 +86,13 @@ export default class HomeFooter extends Component{
             <div className="home-footer">
               <div className="home-song">
                 <div>
-                  {/*<img src={require('../../../../image/fengmian.jpg')}/>*/}
+                  <img src='http://p1.music.126.net/GPkBo_4Y05NCIAUN--dEHw==/18919296579634292.jpg'/>
                 </div>
                 <div>
                   <p className="home-song-title">什么</p>
                   <p className="home-song-lyrics">这是为什么</p>
                 </div>
               </div>
-              </Link>
               {
                 this.state.isShow?showList:null
               }

@@ -18,6 +18,9 @@ import MyInfoData from "./containers/Profile/MyInfoData/index";
 import CollectionSongList from "./containers/Profile/CollectionSongList/index";
 import PersonalDynamic from "./containers/Profile/PersonalDynamic/index";
 import AboutMe from "./containers/Profile/AboutMe/index";
+import RecList from "./containers/Home/Music/RecList/index";
+import VideoList from "./containers/Video/VideoList/index";
+import VideoPage from "./containers/Video/VideoPage/index";
 let history =createHashHistory();
 export default class App extends Component{
     render(){

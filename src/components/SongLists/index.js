@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 import './index.css';
 //歌曲列表，可复用
 export default class SongLists extends Component {
-
     render() {
         let did = this.props.did;
         console.log(did);
