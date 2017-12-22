@@ -111,17 +111,40 @@ app.get('/mv', (req, res) => {
         res.json(JSON.parse(data));
     })
 });
-app.get('/search',(req,res) => {
+app.get('/search', (req, res) => {
     request(`http://localhost:${listen}/search?keywords=${req.query.keywords}`, function (error, response, data) {
         res.json(JSON.parse(data));
     })
 });
 // 歌单详情
-app.get('/songmenudetail',(req,res) => {
+app.get('/songmenudetail', (req, res) => {
     request(`http://localhost:${listen}/playlist/detail?id=${req.query.id}`, function (error, response, data) {
         res.json(JSON.parse(data));
     })
 });
+
+app.get('/personalized', (req, res) => {
+    request(`http://localhost:${listen}/personalized/newsong`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+// 最新MV
+app.get('/mvfirst', (req, res) => {
+    let num = 10;
+    request(`http://localhost:${listen}/mv/first?limit=${num}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    });
+});
+
+app.get('/mvinfo', (req, res) => {
+    request(`http://localhost:${listen}/mv?mvid=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    });
+});
+
+
+
+
 
 
 

@@ -1,7 +1,9 @@
 .RecList{
-  width: 100%;
+  width: 98%;
   position: fixed;
   top:0.65rem;
   bottom:.5rem;
   overflow: scroll;
+  padding: 0 1%;
+  background: #fff;
 }

@@ -7,23 +7,17 @@ import {getSongMenuDetail} from '../../api/home'
 export default class SongMenuDetail extends Component {
     constructor() {
         super();
-        this.state = {music: {}, style: {}}
+        this.state = {music: {}, style: {}, did:[]}
 
     }
-
     componentDidMount() {
         let id = /id=(\d+)/.exec(window.location.hash)[1];
+        this.setState({did:id});
         getSongMenuDetail(id).then(res => {
-            console.log(res);
             this.setState({music: res});
-
         });
     }
-
-
     render() {
-
-
         return (
             this.state.music.code ? <div className="musica">
                 <div className="containers">
@@ -49,7 +43,7 @@ export default class SongMenuDetail extends Component {
                     </div>
                     <div className="detail-main">
                         <SongListsBar/>
-                        <SongLists  tracks={this.state.music.playlist.tracks}/>
+                        <SongLists did={this.state.did}  tracks={this.state.music.playlist.tracks}/>
                     </div>
                 </div>
             </div> : null
