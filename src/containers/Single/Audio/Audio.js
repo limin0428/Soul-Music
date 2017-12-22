@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 export default class Audio extends Component{
     componentDidMount(){
-        setInterval(()=>{
-            this.props.handleGoTime(this.audio.currentTime);
+        let timer=setInterval(()=>{
+            this.audio?this.props.handleGoTime(this.audio.currentTime): clearInterval(timer);
         }, 600);
     }
 componentDidUpdate(){
@@ -13,10 +13,14 @@ componentDidUpdate(){
 
     }
 }
+
     render(){
         return (
+            <iframe>
                 <audio id='audio' ref={(audio)=>this.audio=audio} src={this.props.songUrl}  autoPlay={false} >
                 </audio>
+            </iframe>
+
         )
     }
 }

@@ -9,10 +9,9 @@ import actions from "../../../store/actions/playList";
         // this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
     }
     componentDidUpdate(){
-        // if(this.props.playList.tracks){
-        //     this.props.handleChangeSong(0)
-        // }
-
+        if(this.props.playList.songUrl){
+            this.props.handleChangeSong(0)
+        }
      }
      handleDelSong=(e,id)=>{
         e.preventDefault();
