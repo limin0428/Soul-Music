@@ -14,19 +14,20 @@ export default class SongMenuDetail extends Component {
     componentDidMount() {
         let id = /id=(\d+)/.exec(window.location.hash)[1];
         getSongMenuDetail(id).then(res => {
+            console.log(res);
             this.setState({music: res});
+
         });
     }
 
 
     render() {
 
-        console.log(this.state.music);
+
         return (
             this.state.music.code ? <div className="musica">
-
                 <div className="containers">
-                    <div className="container_bg"  style={{background: `url(${this.state.music.playlist.coverImgUrl})`, opacity: .8}}></div>
+                    <div className="container_bg"  style={{background: `url(${this.state.music.playlist.coverImgUrl}) center`, opacity: .8}}></div>
                     <div className="detail-header">
                         <div className="songlists-title">
                             <div className="songlists-avater">
