@@ -39,10 +39,40 @@ export default class Search extends Component {
                     <ul className="search-list">
                         {
                             this.state.keywords.map((item, index) => (
-                                <li key={index} className="search-item">{item.name}--{item.artists[0].name}</li>
+                                <Link to={`/single?id=${item.id}`} key={index}>
+                                    <li className="search-item">
+                                        <div className="songlist-item">
+                                            <p className="songlist-name-item">{item.name}</p>
+                                            <p className="songlist-name-item-min">{item.artists[0].name}</p>
+                                        </div>
+                                        <div className="songlist-icon-item">
+                                            <i className="iconfont icon-sandian"></i>
+                                        </div>
+                                    </li>
+                                </Link>
                             ))
                         }
                     </ul>
+
+                        {/*<ul className="search-list">*/}
+                            {/*{*/}
+                                {/*this.state.keywords.map((item, index) =>(*/}
+                                    {/*<Link to={`/single?id=${item.id}`}>*/}
+                                        {/*<li key={item.id}>*/}
+                                            {/*<div className="songlist-left">{index+1}</div>*/}
+                                            {/*<div className="songlist">*/}
+                                                {/*<p className="songlist-name">{item.name}</p>*/}
+                                                {/*<p>{item.ar[0].name} - {item.al.name}</p>*/}
+                                            {/*</div>*/}
+                                            {/*<div className="songlist-icon">*/}
+                                                {/*<i className="iconfont icon-sandian"></i>*/}
+                                            {/*</div>*/}
+                                        {/*</li>*/}
+                                    {/*</Link>*/}
+                                {/*))*/}
+                            {/*}*/}
+                        {/*</ul>*/}
+
                 </div>
             </div>
         )

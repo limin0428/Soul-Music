@@ -1,27 +1,33 @@
 import React, {Component} from 'react';
 import './index.css';
+import  {Link} from "react-router-dom"
 // import MenuLink from '../MenuLink'
 export default class HeaderBtn extends Component {
     render() {
         return (
             <div className="fontBox">
                 <div className="font">
-                    <div className="music">
-                        <i className="iconfont icon-icon-"></i>
-                    </div>
+                    <Link to="/reclist">
+                        <div className="music">
+                            <i className="iconfont icon-icon-"></i>
+                        </div>
+                    </Link>
 
-                    <div className="radio">
-                        <i className="iconfont icon-leguansirendiantai"></i>
-                    </div>
-
-                    <div className="video">
-                        <i className="iconfont icon-shipin"></i>
-                    </div>
+                    <Link to="/rankinglist">
+                        <div className="radio">
+                            <i className="iconfont icon-leguansirendiantai"></i>
+                        </div>
+                    </Link>
+                    <Link to="/video">
+                        <div className="video">
+                            <i className="iconfont icon-shipin"></i>
+                        </div>
+                    </Link>
                 </div>
                 <div className="headerBtnBox">
-                    <a className="active" href="javaScript:;">音乐</a>
-                    <a href="javaScript:;">电台</a>
-                    <a href="javaScript:;">视频</a>
+                    <Link to="/reclist" >音乐</Link>
+                    <Link to="/rankinglist">排行榜</Link>
+                    <Link to="/video">视频</Link>
                 </div>
             </div>
 

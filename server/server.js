@@ -1,20 +1,19 @@
 let express = require('express');
 let request = require('request');
-
 let app = express();
 let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 let session = require('express-session');
 app.listen(9527);   // 后台端口
 let listen = 3000;  // 数据端口
-let sliders=require('./mock/sliders');
-let recommendList=require('./mock/recommendList');
-let newSongs=require('./mock/newSongs');
-let searchRes=require('./mock/searchResult');
-let track=require('./mock/track');
-let rankList=require('./mock/rankList');
-let playlist=require('./mock/playlist');
-let songs=require('./mock/songs');
+// let sliders=require('./mock/sliders');
+// let recommendList=require('./mock/recommendList');
+// let newSongs=require('./mock/newSongs');
+// let searchRes=require('./mock/searchResult');
+// let track=require('./mock/track');
+// let rankList=require('./mock/rankList');
+// let playlist=require('./mock/playlist');
+// let songs=require('./mock/songs');
 
 
 app.use(session({
@@ -22,11 +21,7 @@ app.use(session({
     saveUninitialized: true,
     secret: 'zfpx'
 }));
-/*app.use(function (req,res,next) {
-    setTimeout(()=>{
-        next()
-    },100)
-});*/
+
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
     res.header('Access-Control-Allow-Headers', "Content-Type");
@@ -38,6 +33,7 @@ app.use(function (req, res, next) {
         next();
     }
 });
+
 //
 
 // 获取首页轮播图数据
@@ -66,9 +62,9 @@ app.use(function (req, res, next) {
 //     res.json(playlist.playlists);
 // });
 
-app.get('/songmenudetail',function (req,res) {
+/*app.get('/songmenudetail',function (req,res) {
     res.json(track.playlist);
-});
+});*/
 //
 app.get('/rankList',function (req,res) {
     res.json(rankList.playlist);
@@ -79,21 +75,6 @@ app.get('/rankList',function (req,res) {
 });*/
 
 
-
-
-
-// 搜索
-// app.post('/search', function (req, res) {
-//     let songName = req.body.keywords.replace(/(^\s*)|(\s*$)/g, "");
-//     let songLists = searchRes.result;
-//     let songList = songLists.find(item => item.highlights[0] == songName);
-//     console.log(songList);
-//     if (songList) {
-//         res.json({code: 0, success: '查找成功', songList: songList})
-//     } else {
-//         res.json({code: 1, error: '查找失败'})
-//     }
-// });
 
 let users = [];
 // 登录
@@ -205,7 +186,6 @@ app.post('/lyric', (req, res) => {
 // 推荐MV
 app.get('/mv', (req, res) => {
     request(`http://localhost:${listen}/personalized/mv`, function (error, response, data) {
-        console.log(data);
         res.json(JSON.parse(data));
     })
 });
@@ -215,5 +195,32 @@ app.get('/search',(req,res) => {
     })
 });
 
+// 歌单详情
+app.get('/songmenudetail',(req,res) => {
+    request(`http://localhost:${listen}/playlist/detail?id=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+
+
+
+/*
+let {type="",offset=0,limit=5} = req.query;
+offset = isNaN(offset)?0:parseInt(offset);
+limit = isNaN(limit)?0:parseInt(limit);
+let newLessons = JSON.parse(JSON.stringify(lessons));
+//如果type为空，则不过滤课程类型，如果type不为空，则只出现课程类型跟传入的type相同的课程
+newLessons.list = newLessons.list.filter(item=>item.type == type || type =="");
+// 0+5  5+5=10 10+5=15 15+5=20
+//如果下一页的起始索引已经大于等于总条数了，则认为已经分页完毕，后面已经没有数据了
+newLessons.hasMore = limit+offset<newLessons.list.length;//20
+//提取指定页的数据
+newLessons.list = newLessons.list.slice(offset,offset+limit);//offset0 0-4
+for(let i=0;i<newLessons.list.length;i++){
+    let lesson = newLessons.list[i];
+    lesson.title = `${offset+i+1}-${lesson.title}`;
+}
+res.json(newLessons);
+*/
 
 

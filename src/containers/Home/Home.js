@@ -4,8 +4,6 @@ import Header from "./Header/index";
 import HeaderBtn from "./HeaderBtn/index";
 import SongList from "./SongList/index";
 import './Home.css';
-import actions from "../../store/actions/home"
-import {connect} from "react-redux"
 import {getSliders, getPlayList, getMv} from '../../api/home'
 import HomeFooter from "./HomeFooter/index";
 
@@ -17,24 +15,20 @@ export default class Home extends Component {
     componentDidMount() {
         getSliders().then(res => this.setState({Sliders: res.banners})).catch(err => console.log(err));
         getPlayList().then(res => this.setState({PlayList: res.playlists})).catch(err => console.log(err));
-        getMv().then(res => this.setState({Mv: res.result})).catch(err => console.log(err));
+        getMv().then(res =>this.setState({Mv: res.result})).catch(err => console.log(err));
     }
 
-    render() {
 
-        console.log(this.state.Mv);
+    render() {
         return (
             <div className="home">
                 <Header/>
                 <Carousel Sliders={this.state.Sliders}/>
                 <HeaderBtn/>
-                <SongList PlayList={this.state.PlayList} Mv={this.state.Mv}/>
+                <SongList PlayList={this.state.PlayList} Mv={this.state.Mv} />
                 <HomeFooter/>
             </div>
         )
     }
 }
-/*export default connect(
-    state => state,
-    actions
-)(Home)*/
+
