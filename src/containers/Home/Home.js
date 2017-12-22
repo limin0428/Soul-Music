@@ -16,10 +16,7 @@ export default class Home extends Component {
     componentDidMount() {
         getSliders().then(res => this.setState({Sliders: res.banners})).catch(err => console.log(err));
         getPlayList().then(res => this.setState({PlayList: res.playlists})).catch(err => console.log(err));
-        getMv().then(res =>{
-            this.setState({Mv: res.result});
-            console.log(res.result,"1111111");
-        } ).catch(err => console.log(err));
+        getMv().then(res =>this.setState({Mv: res.result})).catch(err => console.log(err));
     }
 
 
@@ -35,7 +32,4 @@ export default class Home extends Component {
         )
     }
 }
-/*export default connect(
-    state => state,
-    actions
-)(Home)*/
+

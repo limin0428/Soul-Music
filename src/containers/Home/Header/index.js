@@ -5,8 +5,9 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header">
-              <i className="iconfont icon-maikefeng1" >
-                </i>
+                <Link to="/navleft">
+              <i className="iconfont icon-maikefeng1" > </i>
+                </Link>
                 <i className="iconfont icon-yinle">
 
                 </i>

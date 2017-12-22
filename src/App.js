@@ -13,6 +13,7 @@ import Single from "./containers/Single/Single";
 import NewMusicList from './containers/Home/Music/NewMusicList/index';
 import RankingList from './containers/Home/Music/RankingList/index';
 import Recommend from './containers/Home/Music/Recommend/index';
+import RecList from './containers/Home/Music/RecList/index';
 import SongMenuDetail from './containers/SongMenuDetail/index';
 import VideoList from './containers/Video/VideoList/index';
 import VideoPage from './containers/Video/VideoPage/index';
@@ -34,6 +35,7 @@ export default class App extends Component{
                     <Route path="/newmusiclist" component={NewMusicList}/>
                     <Route path="/rankinglist" component={RankingList}/>
                     <Route path="/recommend" component={Recommend}/>
+                    <Route path="/reclist" component={RecList}/>
                     <Route path="/songmenudetail" component={SongMenuDetail}/>
                     <Route path="/video" component={VideoList}/>
                     <Route path="/videopage" component={VideoPage}/>

@@ -22,13 +22,11 @@ export default class HomeFooter extends Component{
               {
                 this.state.circulationWay?
                     <div className="home-loop-list">
-                      <i className="iconfont icon-shunxuxunhuan" onClick={this.changePlaySong}>
-                    </i>
+                      <i className="iconfont icon-shunxuxunhuan" onClick={this.changePlaySong}> </i>
                       <span>循环播放</span>
                     </div>
                     :<div className="home-loop-list">
-                      <i className="iconfont icon-danquxunhuan" onClick={this.changePlaySong}>
-                    </i>
+                      <i className="iconfont icon-danquxunhuan" onClick={this.changePlaySong}> </i>
                       <span>单曲循环</span></div>
               }
             <div className="home-loop-list home-loop-list-right">
@@ -86,7 +84,7 @@ export default class HomeFooter extends Component{
       );
         return (
             <div className="home-footer">
-              <Link to="/songle">
+              <Link to="/single">
               <div className="home-song">
                 <div>
                   {/*<img src={require('../../../../image/fengmian.jpg')}/>*/}
