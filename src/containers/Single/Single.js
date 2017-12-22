@@ -18,6 +18,7 @@ class Single extends Component {
             currentTrackIndex:0,//当前歌曲索引
             currentTime: 0,//当前时间
             currentTolTime: 0,//总时间
+            currentSongID:0,//歌曲id
         }
     }
 
@@ -43,16 +44,18 @@ class Single extends Component {
     itemIndex=0;
     handleChangeSong=(index)=>{
         this.itemIndex=index;
+        this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
         console.log(this.itemIndex);
         if(this.props.playList.tracks.length>0){
             this.setState({isPlay:true,
                 currentTrackLen:this.props.playList.tracks.length,
-                currentTolTime:this.props.playList.tracks[this.itemIndex].song.duration,
                 picUrl:this.props.playList.tracks[this.itemIndex].al.picUrl,
-                songUrl:this.props.playList.tracks[this.itemIndex].song.url,
-                songName:this.props.playList.tracks[this.itemIndex].ar[0].name,
-                singleName:this.props.playList.tracks[this.itemIndex].name,
+                songUrl:this.props.playList.SongData[0].url,
+                currentSongID:this.props.playList.tracks[this.itemIndex].id,
+                songName:this.props.playList.tracks[this.itemIndex].name,
+                singleName:this.props.playList.tracks[this.itemIndex].ar[0].name,
             });
+            console.log("歌单里id",this.state.currentSongID,"歌曲id",this.props.playList.SongData[0].id);
         }
     };
 
@@ -68,8 +71,9 @@ class Single extends Component {
             this.handleChangeSong(this.itemIndex-1)
         }
     }
-    componentWillMount(){
-        this.props.fetchPlayList();
+    componentDidMount(){
+        this.props.fetchPlayList(156934569);
+        this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
     }
     componentDidUpdate(){
         if(this.state.currentTime>this.state.currentTolTime){
@@ -107,6 +111,7 @@ class Single extends Component {
                              handleNext={this.handleNext}
                              handlePrev={this.handlePrev}
                              itemIndex={this.itemIndex}
+                             currentSongID={this.state.currentSongID}
                     />
             </div>
         )

@@ -2,13 +2,11 @@
 export  const  GET_SLIDERS='GET_SLIDERS';
 
 
-
-
-
 export const ADD_PLAYLIST='ADD_PLAYLIST';
 
 export const CHANGE_SONG='CHANGE_SONG';
 
+export const GET_ONE_SONG="GET_ONE_SONG"
 //注册
 export const REG = 'REG';
 //登录

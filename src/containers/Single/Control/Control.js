@@ -9,13 +9,13 @@ export default class Control extends Component{
         super();
         this.state={
             isPlay:false,
-            isStart:true,
+            isStart:false,
             isPlayList:false
         }
     }
-    // handlePlay=()=>{
-    //     this.setState({isPlay:!this.state.isPlay});
-    // }
+    handleChangeStart=()=>{
+        this.setState({isStart:!this.state.isStart});
+    }
     handlePlayList=()=>(
        this.setState({isPlayList:!this.state.isPlayList})
     );
@@ -45,7 +45,8 @@ export default class Control extends Component{
                </div>
                <div className='controls-footer'>
                    <span className='icon-list iconfont icon-liebiao1' onClick={this.handlePlayList}> </span>
-                   <span className='icon-left iconfont icon-xunhuan'> </span>
+                   <span className={this.state.isStart?'icon-left iconfont icon-danquxunhuan':'icon-left iconfont icon-xunhuan'} onClick={this.handleChangeStart}> </span>
+
                </div>
                <div>
                    <PlayList handleChangeSong={this.props.handleChangeSong}

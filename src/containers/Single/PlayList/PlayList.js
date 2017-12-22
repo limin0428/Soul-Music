@@ -2,10 +2,12 @@ import React,{Component} from 'react';
 import './PlayList.css'
 import {getPlayList} from '../../../api/player'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 import actions from "../../../store/actions/playList";
  class PlayList extends Component{
 
     componentWillMount(){
+        this.props.fetchPlayList();
         this.props.fetchPlayList();
 
     }
@@ -33,12 +35,14 @@ import actions from "../../../store/actions/playList";
                     <ul className='play-listBody'>
                         {
                             this.props.playList.tracks.map((item,index)=>(
-                                <li className='play-listContent' key={index} onClick={()=>this.props.handleChangeSong(index||0)}>
-                                    <span>{item.ar[0].name}</span>
-                                    <span>-</span>
-                                    <span>{item.name}</span>
-                                    <span className='play-listDel' onTouchStart={this.handleDelSong}>×</span>
-                                </li>
+                                <Link to={`/single?id=${item.id}` } key={index}>
+                                    <li className='play-listContent' key={index} onClick={()=>this.props.handleChangeSong(index||0)}>
+                                        <span>{item.ar[0].name}</span>
+                                        <span>-</span>
+                                        <span>{item.name}</span>
+                                        <span className='play-listDel' onTouchStart={this.handleDelSong}>×</span>
+                                    </li>
+                                </Link>
                             ))
                         }
 

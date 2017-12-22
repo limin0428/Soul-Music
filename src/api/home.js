@@ -15,3 +15,6 @@ export function getSearch(keywords) {
 export function getSongMenuDetail(id) {
     return get(`/songmenudetail?id=${id}`);
 }
+export function getOneSong(id) {
+    return get(`/music?id=${id}`);
+}
