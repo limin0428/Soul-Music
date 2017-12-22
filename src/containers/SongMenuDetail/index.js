@@ -7,13 +7,15 @@ import Tab from '../../components/Tab/index'
 export default class SongMenuDetail extends Component {
     constructor() {
         super();
-        this.state = {music: {}, style: {}, gd:[]}
+        this.state = {music: {}, style: {}, gd:[],url:''}
     }
     componentDidMount() {
+        let url=window.location.href;
+        console.log(url);
         let id = /id=(\d+)/.exec(window.location.hash)[1];
         this.setState({gd:id});
         getSongMenuDetail(id).then(res => {
-            this.setState({music: res});
+            this.setState({music: res,url});
         });
     }
     render() {

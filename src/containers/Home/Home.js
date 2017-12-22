@@ -6,8 +6,10 @@ import SongList from "./SongList/index";
 import './Home.css';
 import {getSliders, getPlayList, getMv} from '../../api/home'
 import HomeFooter from "./HomeFooter/index";
+import {connect} from 'react-redux';
+import actions from '../../store/actions/playList'
 
-export default class Home extends Component {
+class Home extends Component {
     constructor() {
         super();
         this.state = {Sliders: [], PlayList: [], Mv: []}
@@ -24,9 +26,12 @@ export default class Home extends Component {
                 <Carousel Sliders={this.state.Sliders}/>
                 <HeaderBtn/>
                 <SongList PlayList={this.state.PlayList} Mv={this.state.Mv} />
-                <HomeFooter/>
+                <HomeFooter  />
             </div>
         )
     }
 }
-
+export default connect(
+    state=>state,
+    actions
+)(Home)

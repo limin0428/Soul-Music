@@ -17,7 +17,7 @@ export function getSongMenuDetail(id) {
 
 
 export function getPersonalized() {
-    return get(`/personalized`);
+    return get(`/mv`);
 }
 
 export function getMvFirst() {

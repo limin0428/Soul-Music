@@ -4,19 +4,35 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import actions from "../../../store/actions/playList";
  class PlayList extends Component{
-
+constructor(){
+    super();
+    this.state={num:0}
+}
     componentDidMount(){
+
+
         // this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
     }
     componentDidUpdate(){
-        // if(this.props.playList.tracks){
+
+        // if(this.props.itemIndex==0){
         //     this.props.handleChangeSong(0)
         // }
 
      }
-     handleDelSong=(e,id)=>{
-        e.preventDefault();
-         this.props.playList.tracks.filter((item)=>item.id!==id)
+     removeAll=()=>{
+        this.setState({num:0});
+         console.log(this.props.playList.tracks);
+         this.props.playList.tracks=[];
+         console.log(this.props.playList.tracks);
+         console.log(this.props);
+         this.props.handlePouse();
+     }
+
+     handleDelSong=(item)=>{
+
+      let id= /id=(\d+)/.exec(window.location.hash)[1];
+         this.props.playList.tracks=this.props.playList.tracks.filter((item)=>item.id!=id)
      }
     render(){
         return (
@@ -28,32 +44,24 @@ import actions from "../../../store/actions/playList";
                        <h1 className='play-listName'>歌曲列表
                        <span>({this.props.playList.tracks.length})</span>
                        </h1>
-                        <span className='play-listClear iconfont icon-lajixiang1'> </span>
+                        <span className='play-listClear iconfont icon-lajixiang1' onClick={this.removeAll}> </span>
                     </div>
                     <ul className='play-listBody'>
                         {
-                        this.props.playList.tracks.map((item,index)=>(
-                                <Link to={`/single?id=${item.id}` } key={index} onClick={()=>{this.props.handleChangeSong(index||0);this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]) }}>
-                                    <li className='play-listContent' >
-                                        <span>{item.ar[0].name}</span>
-                                        <span>-</span>
-                                        <span>{item.name}</span>
-                                        <span className='play-listDel' onClick={this.handleDelSong}>×</span>
-                                    </li>
-                                </Link>
-                           ))
+                            this.props.playList.tracks.length>0?
+                                this.props.playList.tracks.map((item,index)=>(
+                                <li className='play-listContent' key={index}>
+                                    <Link to={`/single?id=${item.id}` }>
+                                        <div onClick={()=>{this.props.handleChangeSong(index||0);this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]) }}>
+                                            <span>{item.ar[0].name}</span>
+                                            <span>-</span>
+                                            <span>{item.name}</span>
+                                        </div>
+                                        <span className='play-listDel' onClick={()=>this.handleDelSong(item)}>×</span>
+                                    </Link>
+                                </li>
+                            )):null
                         }
-                        {
-                            // this.state.PlayListData.tracks.map((item,index)=>{
-                            //     <li className='play-listContent' key={index}>
-                            //         <span>{item.ar[0].name}</span>
-                            //         <span>-</span>
-                            //         <span>{item.name}</span>
-                            //         <span className='play-listDel'>×</span>
-                            //     </li>
-                            // })
-                        }
-
                     </ul>
                     <div className='play-listFooter' onClick={this.props.handlePlayList}>
                         <span className='play-off'>关闭</span>

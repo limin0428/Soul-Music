@@ -36,6 +36,8 @@ export default class Control extends Component{
                              songUrl={this.props.songUrl}
                              handleChangeProgress={this.props.handleChangeProgress}
                              handleGetSong={this.props.handleGetSong}
+                             handlePlay={this.props.handlePlay}
+
                    />
                </div>
                <div className="controls">
@@ -57,6 +59,7 @@ export default class Control extends Component{
                        currentTrackIndex={this.props.currentTrackIndex}
                              itemIndex={this.props.itemIndex}
                              handleGetSong={this.props.handleGetSong}
+                             handlePouse={this.props.handlePouse}
                    />
                </div>
            </div>

@@ -27,6 +27,9 @@ class Single extends Component {
     handlePlay=()=>{
         this.setState({isPlay:!this.state.isPlay});
     }
+    handlePouse=()=>{
+        this.setState({isPlay:false});
+    }
     handleChangeProgress=(nowtime)=>{
         this.setState({currentTime:nowtime})
     };
@@ -109,10 +112,12 @@ class Single extends Component {
                         handleGoTime={this.handleGoTime}
                         handleChangeProgress={this.handleChangeProgress}
                         handleNext={this.handleNext}
+                        handlePouse={this.handlePouse}
                         handlePrev={this.handlePrev}
                         itemIndex={this.itemIndex}
                         currentSongID={this.state.currentSongID}
                         handleGetSong={this.handleGetSong}
+
                />
            </div>
         )
