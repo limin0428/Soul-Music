@@ -1,0 +1,128 @@
+.home-footer {
+  position: fixed;
+  bottom: 0;
+  height: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  z-index: 10;
+}
+.home-footer a {
+  width: 80%;
+}
+.home-footer a .home-song {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.home-footer a .home-song div:nth-child(1) {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.home-footer a .home-song div:nth-child(1) img {
+  width: 0.4rem;
+  height: 0.4rem;
+  padding: 0.05rem;
+}
+.home-footer a .home-song div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  padding: 0.05rem 0;
+}
+.home-footer a .home-song div:nth-child(2) .home-song-title {
+  font-size: 0.16rem;
+}
+.home-footer a .home-song div:nth-child(2) .home-song-lyrics {
+  font-size: 0.12rem;
+}
+.home-footer .home-icon {
+  height: 100%;
+  margin-right: 0.05rem;
+}
+.home-footer .home-icon i {
+  font-size: 0.25rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+.home-footer .home-icon i:nth-child(1) {
+  margin-right: 0.12rem;
+}
+.home-footer .home-song-list {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  border-top: 1px solid #555;
+}
+.home-footer .home-song-list .song-list1 {
+  background: #fff;
+  border-bottom: 1px solid #555;
+  height: 0.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-footer .home-song-list .song-list1 .home-loop-list {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-left: 0.1rem;
+}
+.home-footer .home-song-list .song-list1 .home-loop-list span {
+  font-size: 0.16rem;
+  vertical-align: middle;
+}
+.home-footer .home-song-list .song-list1 .home-loop-list i {
+  font-size: 0.25rem;
+  vertical-align: middle;
+  margin-right: 0.05rem;
+}
+.home-footer .home-song-list .song-list1 .home-loop-list-right {
+  margin-right: 0.1rem;
+}
+.home-footer .home-song-list .song-list1 .home-loop-list-right span {
+  margin-right: 0.15rem;
+}
+.home-footer .home-song-list .home-songs-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+  display: flex;
+}
+.home-footer .home-song-list .home-songs-box .home-songs {
+  width: 100%;
+}
+.home-footer .home-song-list .home-songs-box .home-songs .home-song {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 0.3rem;
+  background: #fff;
+  border-bottom: 1px solid #555;
+}
+.home-footer .home-song-list .home-songs-box .home-songs .home-song span {
+  display: inline-block;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  font-size: 0.14rem;
+}
+.home-footer .home-song-list .home-songs-box .home-songs .home-song span:nth-child(1) {
+  margin-left: 0.1rem;
+}
+.home-footer .home-song-list .home-songs-box .home-songs .home-song i {
+  height: 0.3rem;
+  line-height: 0.3rem;
+  font-size: 0.2rem;
+  margin-right: 0.1rem;
+}
+.home-footer .home-song-list .home-song-close {
+  height: 0.35rem;
+  line-height: 0.35rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}

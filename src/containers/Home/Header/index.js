@@ -1,0 +1,23 @@
+import React, {Component} from 'react';
+import "./index.css"
+import  {Link} from "react-router-dom"
+export default class Header extends Component {
+    render() {
+        return (
+            <div className="header">
+                <Link to="/navleft">
+              <i className="iconfont icon-maikefeng1" > </i>
+                </Link>
+                <i className="iconfont icon-yinle">
+
+                </i>
+                <div className="headerBox">
+                    <Link to="/search"><input className="inputBox" type="text" placeholder="搜索音乐、歌词、视频、电台" /><i className="iconfont icon-sousuo2"></i></Link>
+                </div>
+            </div>
+        )
+    }
+}
+
+
+

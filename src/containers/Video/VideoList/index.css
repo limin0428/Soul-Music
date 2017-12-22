@@ -1,0 +1,34 @@
+.video_demo{
+  width: 100%;
+
+  top:0.5rem;
+  bottom:0;
+  overflow: scroll;
+}
+.video_list{ width: 100%; top: 0}
+.video_list_cover{
+
+  height: 180px;
+  width: 100%;
+
+}
+.video_list_cover img{  height: 180px;
+  width: 100%;}
+
+
+.video_list_pages{
+  width: 100%;
+  padding: 2% 0;
+  background-color:#fff;
+}
+.video_list .video_size{ width: 100%; line-height: 200%; padding: 2%; color: #555555}
+
+
+
+
+
+
+
+
+
+

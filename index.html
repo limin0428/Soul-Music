@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soul Music</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_386252_nz2ixfsdm0io1or.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503663_jvt13zelf40r7ldi.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503980_pcmq1cuk7c766r.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503980_rw88u8vpqxq4obt9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503980_upmnqxsnvmq5b3xr.css">
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_513193_i48iwp5rse4p9zfr.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503980_nheour3idj4kuik9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_386252_nz2ixfsdm0io1or.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503663_jvt13zelf40r7ldi.css">
+    <link rel="stylesheet" href="font_lrlq5aoy1hhq6w29/iconfont.css">
+    <link rel="stylesheet" href="./src/animation.css"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503663_zho2dfi2qyf1or.css">
+    <link rel="stylesheet" href="///at.alicdn.com/t/font_503663_drqma8432y6z85mi.css">
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_503990_7g3xsd40orhsq0k9.css">
+
+    
+
+    <script>
+        //设计稿宽度375对应的根节点fontsize是100px即1rem=100px;
+        var desW=375;
+        function refreshRem() {
+            var doc=document.documentElement;
+            var winW=doc.clientWidth;
+            var radio=winW/desW;//设计稿和窗口大小的比例
+
+            doc.style.fontSize=100*radio+'px';
+        }
+        refreshRem();
+        //监听窗口大小的变化重新计算rem的大小
+        window.addEventListener('resize',refreshRem)
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            font-size: 100px;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+
+            overflow:hidden;
+            color: #535353;
+            box-sizing: border-box;
+
+        }
+        #app{
+            font-size: 0.14rem;
+        }
+        a{
+            text-decoration: none;
+            color:#374782;
+        }
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app"></div>
+
+</body>
+</html>

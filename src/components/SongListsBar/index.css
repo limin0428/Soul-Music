@@ -1,0 +1,28 @@
+.songlists-bar {
+  height: .36rem;
+  line-height: .36rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: .08rem .2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+}
+
+.bar i {
+  font-size: .2rem;
+  margin-right:.12rem;
+}
+
+.songlists-bar-left {
+  font-size: .16rem;
+}
+
+.songlists-bar-left i {
+  font-size: .24rem;
+}
