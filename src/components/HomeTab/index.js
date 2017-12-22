@@ -1,30 +1,14 @@
 import React,{Component} from 'react';
-import {Link} from 'react-router-dom';
+import {withRouter} from 'react-router-dom'
 import './index.less'
-export default class HomeTab extends Component{
+class Tab extends Component{
     render(){
         return (
             <div className="tab">
-              <div className="tab-home">
-                <div className="tab-personal">
-                  <Link to="/personalcenter">
-                  <i className="iconfont icon-wodeyinyueliebiaomoshi24"></i>
-                  </Link>
-                </div>
-                <div className="tab-list">
-                  <i className="iconfont icon-yinle1"></i>
-                  <Link to="/">
-                  <i className="iconfont icon-yinle3 yinyue-home"></i>
-                  </Link>
-                  <i className="iconfont icon-huati"></i>
-                </div>
-                <div className="tab-search">
-                  <Link to="/search">
-                  <i className="iconfont icon-sousuo"></i>
-                  </Link>
-                </div>
-              </div>
+                <i className="iconfont icon-fanhui" onClick=></i>
+                <span>{this.props.title}</span>
             </div>
         )
     }
 }
+export default withRouter(Tab)

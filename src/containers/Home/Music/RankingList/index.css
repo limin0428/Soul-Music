@@ -1,30 +1,34 @@
 .ranklists{
   width:100%;
-  margin-top:.6rem;
+  height:100%;
 }
 .ranklists ul{
-  background-color:#fff;
+  position: fixed;
+  top:0.6rem;
+  background:#fff;
   width:100%;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+  overflow: scroll;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .ranklist{
   width:100%;
-  display:flex;
-  align-items:center;
+  float: left;
   border-bottom:1px solid #ddd;
 }
 .rank-cover{
-  width:1rem;
-  height:1rem;
+  width:28%;
+  float: left;
 }
 .rank-cover img{
   width:100%;
   height:100%;
 }
 .rank-hot {
-  margin-left:.2rem;
+  margin-left:2%;
+  width: 70%;
+  float: left;
 }
 .rank-hot p{
   line-height:.2rem;

@@ -7,7 +7,7 @@ import actions from "../../../store/actions/playList";
 
     componentWillMount(){
         this.props.fetchPlayList();
-
+      console.log(this.props);
     }
     componentDidUpdate(){
          if (this.props.itemIndex==0){

@@ -74,9 +74,9 @@ app.get('/rankList',function (req,res) {
     res.json(rankList.playlist);
 });
 // 获取精品歌单 
-app.get('/playlist',function (req,res) {
+/*app.get('/playlist',function (req,res) {
     res.json(playlist.playlists);
-});
+});*/
 
 
 
@@ -110,7 +110,7 @@ app.post('/login', function (req, res) {
 // 注册
 app.post('/reg', function (req, res) {
     let user = req.body;
-    let oldUser = users.find(item => item.username == user.username);
+    let oldUser = users.find(item =>item.username == user.username);
     if (oldUser) {
         res.json({code: 1, error: '用户名重复'})
     } else {
@@ -142,6 +142,43 @@ app.get('/playlist', (req, res) => {
         res.json(JSON.parse(data));
     });
 });
+
+//获取最新歌曲
+app.get('/album', (req, res) => {
+  let num = 6; // 获取的歌单数量  parseInt(req.body.num)
+  request(`http://localhost:${listen}/top/artists?offset=0&limit=10`,function (error, response, data) {
+    res.json(JSON.parse(data));
+  });
+});
+//获取云音乐新歌榜
+app.get('/newList', (req, res) => {
+  request(`http://localhost:${listen}/top/list?idx=0`,function (error, response, data) {
+    console.log(data);
+    res.json(JSON.parse(data));
+  });
+});
+//获取云音乐热歌榜
+app.get('/topList', (req, res) => {
+  request(`http://localhost:${listen}/top/list?idx=1`,function (error, response, data) {
+    console.log(data);
+    res.json(JSON.parse(data));
+  });
+});
+//获取网易原创榜
+app.get('/originalList', (req, res) => {
+  request(`http://localhost:${listen}/top/list?idx=2`,function (error, response, data) {
+    console.log(data);
+    res.json(JSON.parse(data));
+  });
+});
+//获取歌手专辑
+app.post('/artists', (req, res) => {
+  let id = parseInt(req.body.id); // 获取的歌单id
+  request(`http://localhost:${listen}/artists?id=${id}`, function (error, response, data) {
+    res.json(JSON.parse(data));
+  })
+});
+
 // 获取歌单
 app.post('/musiclist', (req, res) => {
     let id = parseInt(req.body.id); // 获取的歌单id
@@ -177,23 +214,6 @@ app.get('/search',(req,res) => {
         res.json(JSON.parse(data));
     })
 });
-/*
-let {type="",offset=0,limit=5} = req.query;
-offset = isNaN(offset)?0:parseInt(offset);
-limit = isNaN(limit)?0:parseInt(limit);
-let newLessons = JSON.parse(JSON.stringify(lessons));
-//如果type为空，则不过滤课程类型，如果type不为空，则只出现课程类型跟传入的type相同的课程
-newLessons.list = newLessons.list.filter(item=>item.type == type || type =="");
-// 0+5  5+5=10 10+5=15 15+5=20
-//如果下一页的起始索引已经大于等于总条数了，则认为已经分页完毕，后面已经没有数据了
-newLessons.hasMore = limit+offset<newLessons.list.length;//20
-//提取指定页的数据
-newLessons.list = newLessons.list.slice(offset,offset+limit);//offset0 0-4
-for(let i=0;i<newLessons.list.length;i++){
-    let lesson = newLessons.list[i];
-    lesson.title = `${offset+i+1}-${lesson.title}`;
-}
-res.json(newLessons);
-*/
+
 
 

@@ -20,7 +20,7 @@ export default class App extends Component{
     render(){
         return (
             <ConnectedRouter history={history}>
-                <div>
+                <div className="app-router">
                     {/*主页*/}
                     <Route exact path="/" component={Home}/>
                     {/*搜索页*/}

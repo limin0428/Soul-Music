@@ -10,7 +10,7 @@ export default {
                 dispatch({
                     type: types.REG,
                     payload: {success, error}
-                })
+                });
                 if (code == 0) {//成功
                     dispatch(push('/login'));
                 }
