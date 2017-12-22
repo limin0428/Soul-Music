@@ -1,20 +1,19 @@
 let express = require('express');
 let request = require('request');
-
 let app = express();
 let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 let session = require('express-session');
 app.listen(9527);   // 后台端口
 let listen = 3000;  // 数据端口
-let sliders=require('./mock/sliders');
-let recommendList=require('./mock/recommendList');
-let newSongs=require('./mock/newSongs');
-let searchRes=require('./mock/searchResult');
-let track=require('./mock/track');
-let rankList=require('./mock/rankList');
-let playlist=require('./mock/playlist');
-let songs=require('./mock/songs');
+// let sliders=require('./mock/sliders');
+// let recommendList=require('./mock/recommendList');
+// let newSongs=require('./mock/newSongs');
+// let searchRes=require('./mock/searchResult');
+// let track=require('./mock/track');
+// let rankList=require('./mock/rankList');
+// let playlist=require('./mock/playlist');
+// let songs=require('./mock/songs');
 
 
 app.use(session({
@@ -22,11 +21,7 @@ app.use(session({
     saveUninitialized: true,
     secret: 'zfpx'
 }));
-/*app.use(function (req,res,next) {
-    setTimeout(()=>{
-        next()
-    },100)
-});*/
+
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
     res.header('Access-Control-Allow-Headers', "Content-Type");
@@ -38,46 +33,7 @@ app.use(function (req, res, next) {
         next();
     }
 });
-// 获取首页轮播图数据
-app.get('/sliders',function (req,res) {
-    res.json(sliders.banners);
-});
-// 获取推荐歌单
-app.get('/recommendList',function (req,res) {
-    res.json(recommendList.recomList);
-});
-// 最新歌单
-app.get('/newsong',function (req,res) {
-    res.json(newSongs.newSongList);
-});
-//
-app.get('/songmenudetail',function (req,res) {
-    res.json(track.playlist);
-});
-//
-app.get('/rankList',function (req,res) {
-    res.json(rankList.playlist);
-});
-// 获取精品歌单
-app.get('/playlist',function (req,res) {
-    res.json(playlist.playlists);
-});
 
-
-
-
-// 搜索
-app.post('/search', function (req, res) {
-    let songName = req.body.keywords.replace(/(^\s*)|(\s*$)/g, "");
-    let songLists = searchRes.result;
-    let songList = songLists.find(item => item.highlights[0] == songName);
-    console.log(songList);
-    if (songList) {
-        res.json({code: 0, success: '查找成功', songList: songList})
-    } else {
-        res.json({code: 1, error: '查找失败'})
-    }
-});
 
 let users = [];
 // 登录
@@ -117,20 +73,20 @@ app.get('/validate', function (req, res) {
 });
 app.get('/sliders', (req, res) => {
     request(`http://localhost:${listen}/banner`, function (error, response, data) {
-        res.json(data);
+        res.json(JSON.parse(data));
     })
 });
 app.get('/playlist', (req, res) => {
-    let num = 3; // 获取的歌单数量  parseInt(req.body.num)
+    let num = 6; // 获取的歌单数量  parseInt(req.body.num)
     request(`http://localhost:${listen}/top/playlist/highquality?limit=${num}`, function (error, response, data) {
-        res.json(data);
+        res.json(JSON.parse(data));
     });
 });
 // 获取歌单
 app.post('/musiclist', (req, res) => {
     let id = parseInt(req.body.id); // 获取的歌单id
     request(`http://localhost:${listen}/playlist/detail?id=${id}`, function (error, response, data) {
-        res.json(data);
+        res.json(JSON.parse(data));
     })
 });
 //获取歌曲
@@ -138,7 +94,7 @@ app.post('/music', (req, res) => {
     let id = parseInt(req.body.id); // 获取的歌单id
     request(`http://localhost:${listen}/music/url?id=${id}`, function (error, response, data) {
         if (!error && response.statusCode == 200) {
-            res.json(data)
+            res.json(JSON.parse(data));
         }
     });
 });
@@ -146,10 +102,28 @@ app.post('/music', (req, res) => {
 app.post('/lyric', (req, res) => {
     let id = parseInt(req.body.id); // 获取的歌单id
     request(`http://localhost:${listen}/lyric?id=${id}`, function (error, response, data) {
-        res.json(data);
-
+        res.json(JSON.parse(data));
     })
 });
+// 推荐MV
+app.get('/mv', (req, res) => {
+    request(`http://localhost:${listen}/personalized/mv`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+app.get('/search',(req,res) => {
+    request(`http://localhost:${listen}/search?keywords=${req.query.keywords}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+// 歌单详情
+app.get('/songmenudetail',(req,res) => {
+    request(`http://localhost:${listen}/playlist/detail?id=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+
+
 
 /*
 let {type="",offset=0,limit=5} = req.query;

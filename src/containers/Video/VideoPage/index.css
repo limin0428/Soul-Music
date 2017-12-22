@@ -1,0 +1,62 @@
+.video_demo{
+  width: 100%;
+  position: fixed;
+  top: 0.5rem;
+  bottom:0;
+  overflow: scroll;
+}
+.video_cover{
+  position: fixed;
+  height: 240px;
+  width: 100%;
+  z-index: 100;
+}
+.video_cover img{  height: 240px;
+  width: 100%;}
+
+.classification{
+  width:100%;
+  height:.4rem;
+  margin:.05rem 0;
+  background-color:#efeff4;
+}
+.classification span{
+  height:.4rem;
+  line-height:.4rem;
+  padding:5px;
+  text-align:center;
+  border:1px solid #ddd;
+  border-radius:.2rem;
+  margin-left:.2rem;
+   background: #fff;
+}
+.video_page{
+  width: 100%;
+  padding: 2% 0;
+  background-color:#fff;
+  margin-top: 250px;
+}
+.video_title{ height: 50px; width: 100%;  padding: 0 2%}
+.video_up_img{ width: 12%; float: left; border-radius: 50%}
+.video_up_title{ width: 80%; float: left; line-height: 300%; font-size:.16rem; margin-left: 2% }
+.video_dis{ height: 30px; }
+.time{ padding: 2% 2%; float: left; color: #999999}
+.video_size{ width: 100%; line-height: 200%; padding: 2%; color: #555555}
+.video_t_video{
+  width: 100%;
+}
+.video_item{ width: 96%; height: 70px; padding: 2%; border-bottom: 1px dashed #999999;  }
+.video_min{ width: 40%; height: 70px; float: left; overflow: hidden;position: relative}
+.video_min img{ width: 100%}
+.ico_video{ position: absolute; top: 2px; right: 5px; color: #fff;}
+.video_min_list{ width: 57%; float: left; margin-left: 2%}
+.video_min_list_bot{width: 57%; float: left; margin-left: 2%; font-size: .12rem; height: 30px; line-height: 30px; color: #999999}
+
+
+
+
+
+
+
+
+

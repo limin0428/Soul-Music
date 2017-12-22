@@ -1,0 +1,102 @@
+.search-header {
+    width: 100%;
+    height: .65rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #363636;
+}
+
+.search-headerBox .search-inputBox {
+    position: absolute;
+    left: .15rem;
+    top: .2rem;
+    width: 2.5rem;
+    height: .3rem;
+    border: 1px solid #808a99;
+    border-radius: .3rem;
+    font-size: .14rem;
+    padding-left: .2rem;
+    color: #808a99;
+}
+
+.search-header span {
+    position: absolute;
+    top: .22rem;
+    font-size: .18rem;
+    color: white;
+    right: .1rem;
+}
+
+.search-body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: .65rem;
+    left: 0;
+    background-color: #f0f0f0;
+    overflow: scroll;
+}
+
+.search-list {
+    width: 97%;
+    padding:0 1.5%;
+}
+
+.search-item {
+    box-shadow: 1px 1px 1px #b7b7b7;
+    border-radius: .05rem;
+    padding: 1% 2%;
+    float: left;
+    width: 96%;
+    background: #fff;
+    margin-top: 1.5%;
+}
+
+.songlist-item {
+    display: block;
+    width: 90%; float: left;
+}
+
+.songlist-item p {
+    line-height: 160%;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.songlist-name-item-min{
+    font-size: .12rem;
+    color: #7f7f7f;
+}
+.songlist-name-item {
+    font-size: .16rem;
+    color: black;
+}
+
+.songlist-icon-item {
+    line-height: .45rem;
+    width: .2rem;  float: right;
+}
+
+.songlist-icon-item i {
+    font-size: .3rem;
+}
+
+
+.search-list ul {
+    padding: 0 .12rem;
+    overflow-y: scroll;
+}
+
+.search-list ul li {
+    border-top: 1px solid #ddd;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.songlist-left{
+    line-height: .6rem;
+    margin-right: .1rem;
+}

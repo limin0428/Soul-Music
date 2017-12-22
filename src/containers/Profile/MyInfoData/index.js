@@ -1,11 +1,9 @@
 import React,{Component} from 'react';
-import Single from "./Single/Single";
-
-export default class App extends Component{
+export default class MyInfoData extends Component{
     render(){
         return (
             <div>
-                <Single/>
+                {/*MyInfoData*/}
             </div>
         )
     }

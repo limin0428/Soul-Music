@@ -8,10 +8,13 @@ export function get(url){
         credentials:"include",//向服务器发送cookie
         headers:{
             "Accept":"application/json",//请求头
+            'Content-Type': 'application/json'
         }
     }).then(res=> res.json())//把响应体转成json
 }
-export function post(url,id) {
+
+export function post(url,data) {
+
         return fetch(HOST+url, {
             method: 'POST',
             credentials:"include",//向服务器发送cookie
@@ -19,7 +22,15 @@ export function post(url,id) {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({'id':id})
-        }).then(res=>res.json())
+            body: JSON.stringify(data)
+        }).then((response) => {
+            return response.json();
+             console.log(response.json());
+        }).catch((err) => {
+                dispatch(success({
+                    msg: (__DEBUG__ && err.message) ? err.message : strings.NET_ERROR,
+                    data: false
+                }));
+            });
     }
 
