@@ -123,7 +123,7 @@ module.exports = {
                 },
                 song: {
                     "id": 513054055,
-                    "url": "http://m10.music.126.net/20171220172801/d56ed2a9ae0fa642708436f0afa1ffa0/ymusic/c305/6cf1/68e9/3fdef4dbda00d72f64c97c34d766aae4.mp3",
+                    "url": "http://m10.music.126.net/20171221172121/0d8b715e971c5779363d0282da183956/ymusic/c305/6cf1/68e9/3fdef4dbda00d72f64c97c34d766aae4.mp3",
                     "br": 128000,
                     "size": 5339472,
                     "duration":333,

@@ -1,21 +1,22 @@
 import React,{Component} from 'react';
 import './PlayList.css'
-import {getPlayList} from '../../../api/player'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 import actions from "../../../store/actions/playList";
  class PlayList extends Component{
 
-    componentWillMount(){
-        this.props.fetchPlayList();
-
+    componentDidMount(){
+        // this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
     }
     componentDidUpdate(){
-         if (this.props.itemIndex==0){
-             this.props.handleChangeSong(0)
-         }
+        // if(this.props.playList.tracks){
+        //     this.props.handleChangeSong(0)
+        // }
+
      }
-     changeSong=(id)=> {
-         let nowSong= this.props.playList.tracks.find(item => item.id == id);
+     handleDelSong=(e,id)=>{
+        e.preventDefault();
+         this.props.playList.tracks.filter((item)=>item.id!==id)
      }
     render(){
         return (
@@ -31,16 +32,17 @@ import actions from "../../../store/actions/playList";
                     </div>
                     <ul className='play-listBody'>
                         {
-                            this.props.playList.tracks.map((item,index)=>(
-                                <li className='play-listContent' key={index} onClick={()=>this.props.handleChangeSong(index||0)}>
-                                    <span>{item.ar[0].name}</span>
-                                    <span>-</span>
-                                    <span>{item.name}</span>
-                                    <span className='play-listDel'>×</span>
-                                </li>
-                            ))
+                        this.props.playList.tracks.map((item,index)=>(
+                                <Link to={`/single?id=${item.id}` } key={index} onClick={()=>{this.props.handleChangeSong(index||0);this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]) }}>
+                                    <li className='play-listContent' >
+                                        <span>{item.ar[0].name}</span>
+                                        <span>-</span>
+                                        <span>{item.name}</span>
+                                        <span className='play-listDel' onClick={this.handleDelSong}>×</span>
+                                    </li>
+                                </Link>
+                           ))
                         }
-
                         {
                             // this.state.PlayListData.tracks.map((item,index)=>{
                             //     <li className='play-listContent' key={index}>

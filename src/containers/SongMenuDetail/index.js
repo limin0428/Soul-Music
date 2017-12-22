@@ -7,15 +7,12 @@ import Tab from '../../components/Tab/index'
 export default class SongMenuDetail extends Component {
     constructor() {
         super();
-
-        this.state = {music: {}, style: {}, did:[]}
-
+        this.state = {music: {}, style: {}, gd:[]}
     }
     componentDidMount() {
         let id = /id=(\d+)/.exec(window.location.hash)[1];
-        this.setState({did:id});
+        this.setState({gd:id});
         getSongMenuDetail(id).then(res => {
-            console.log(res);
             this.setState({music: res});
         });
     }
@@ -47,7 +44,8 @@ export default class SongMenuDetail extends Component {
                     </div>
                     <div className="detail-main">
                         <SongListsBar/>
-                        <SongLists did={this.state.did}  tracks={this.state.music.playlist.tracks}/>
+
+                        <SongLists gd={this.state.gd}  tracks={this.state.music.playlist.tracks}/>
                     </div>
                 </div>
             </div> : null

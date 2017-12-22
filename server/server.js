@@ -121,6 +121,20 @@ app.get('/songmenudetail', (req, res) => {
         res.json(JSON.parse(data));
     })
 });
+app.get('/music',(req,res) => {
+    request(`http://localhost:${listen}/music/url?id=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+
+app.get('/musicsingle',(req,res) => {
+    request(`http://localhost:${listen}/artists?id=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+
+
+
 
 app.get('/personalized', (req, res) => {
     request(`http://localhost:${listen}/personalized/newsong`, function (error, response, data) {

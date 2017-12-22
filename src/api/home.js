@@ -15,6 +15,7 @@ export function getSongMenuDetail(id) {
     return get(`/songmenudetail?id=${id}`);
 }
 
+
 export function getPersonalized() {
     return get(`/personalized`);
 }
@@ -24,5 +25,10 @@ export function getMvFirst() {
 }
 export function getMvInfo(id) {
     return get(`/mvinfo?id=${id}`)
+}
+
+
+export function getOneSong(id) {
+    return get(`/music?id=${id}`);
 }
 

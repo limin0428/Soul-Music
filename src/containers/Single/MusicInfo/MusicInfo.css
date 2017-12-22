@@ -80,12 +80,15 @@
     left: 0.8rem;
     bottom: -1.7rem;
 }
-.icon-collect{
+.icon-collectBtn{
     font-size: 0.39rem;
     position: absolute;
     left: -0.35rem;
     bottom: 1.78rem;
     color: #fff;
+}
+.icon-collect{
+    color: #ff4e30;
 }
 .go-lrc{
     font-size: 0.3rem;
@@ -143,10 +146,10 @@
     height: 0.04rem;
     background-color: #7ebaff;
 }
-/*.sound-lineBg{*/
-    /*position: absolute;*/
-    /*left: 0.93rem;*/
-    /*width: 2.2rem;*/
-    /*height: 0.04rem;*/
-    /*background-color: #65ff3f;*/
-/*}*/
+.sound-lineBg{
+    position: absolute;
+    left: 0.94rem;
+    width: 0;
+    height: 0.04rem;
+    background-color: #65ff3f;
+}
