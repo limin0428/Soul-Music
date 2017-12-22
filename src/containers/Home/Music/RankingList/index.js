@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './index.css';
+
 import {connect} from 'react-redux'
 import Tab from '../../../../components/Tab';
 import actions from '../../../../store/actions/playList';
@@ -35,7 +36,9 @@ class RankingList extends Component{
         )
     }
 }
+
 export default connect(
     state=>state,
     actions
 )(RankingList)
+

@@ -8,7 +8,6 @@
     z-index: 100;
 }
 
-
 .headerBox .inputBox{
     position: absolute;
     left:.55rem;
@@ -26,9 +25,7 @@
     right: .8rem;
     top:.28rem;
     font-size: .17rem;
-
 }
-
 .icon-maikefeng1{
     position: absolute;
     top:.2rem;

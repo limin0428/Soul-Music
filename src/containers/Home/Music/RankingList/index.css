@@ -1,36 +1,29 @@
-.ranklists{
-  width:100%;
-  height:100%;
-}
-.ranklists ul{
+.ranklists {
+  width: 100%;
+  height: 100%;
   position: fixed;
-  top:0.6rem;
-  background:#fff;
-  width:100%;
-  overflow: scroll;
-  left: 0;
-  right: 0;
+  top: 0.6rem;
+}
+.ranklists .ranklists ul {
+  height: 100%;
+  position: fixed;
+  top: 0.6rem;
   bottom: 0;
+  background-color: #fff;
+  overflow: scroll;
 }
-.ranklist{
-  width:100%;
-  float: left;
-  border-bottom:1px solid #ddd;
+.ranklists .ranklists ul .ranklist {
+  height: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
 }
-.rank-cover{
-  width:28%;
-  float: left;
+.ranklists .ranklists ul .ranklist .rank-cover {
+  width: 1rem;
+  height: 1rem;
 }
-.rank-cover img{
-  width:100%;
-  height:100%;
-}
-.rank-hot {
-  margin-left:2%;
-  width: 70%;
-  float: left;
-}
-.rank-hot p{
-  line-height:.2rem;
-  padding:.08rem;
+.ranklists .ranklists ul .ranklist .rank-cover img {
+  width: 100%;
+  height: 100%;
 }

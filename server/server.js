@@ -123,6 +123,25 @@ app.get('/songmenudetail', (req, res) => {
     })
 });
 
+app.get('/personalized', (req, res) => {
+    request(`http://localhost:${listen}/personalized/newsong`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+// 最新MV
+app.get('/mvfirst', (req, res) => {
+    let num = 10;
+    request(`http://localhost:${listen}/mv/first?limit=${num}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    });
+});
+
+app.get('/mvinfo', (req, res) => {
+    request(`http://localhost:${listen}/mv?mvid=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    });
+});
+
 
 /*
 let {type="",offset=0,limit=5} = req.query;
