@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import './index.css';
 import {Link} from 'react-router-dom';
@@ -25,8 +24,10 @@ export default class SongView extends Component {
                                 </p>
                             </Link>
                         </li>
+
                     ))
                 }
+
             </ul>
         )
     }

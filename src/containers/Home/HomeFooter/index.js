@@ -82,22 +82,26 @@ export default class HomeFooter extends Component{
           <p className="home-song-close" onClick={this.changeShow}>关闭</p>
         </div>
       );
+
         return (
             <div className="home-footer">
-              <div className="home-song">
-                <div>
-                  <img src='http://p1.music.126.net/GPkBo_4Y05NCIAUN--dEHw==/18919296579634292.jpg'/>
+              <Link to="/songmenudetail?id=733122887">
+                <div className="home-song">
+                  <div>
+                    <img src='http://p1.music.126.net/GPkBo_4Y05NCIAUN--dEHw==/18919296579634292.jpg'/>
+                  </div>
+                  <div>
+                    <p className="home-song-title">什么都不会</p>
+                    <p className="home-song-lyrics">其实  我什么都不会...</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="home-song-title">什么</p>
-                  <p className="home-song-lyrics">这是为什么</p>
-                </div>
-              </div>
+              </Link>
+
               {
                 this.state.isShow?showList:null
               }
               <div className="home-icon">
-                {this.state.isPlay?<i className="iconfont icon-zanting" onClick={this.handleClick}></i>:<i className="iconfont icon-bofang" onClick={this.handleClick}></i>}
+                {this.state.isPlay?<i className="iconfont icon-zanting1" onClick={this.handleClick}></i>:<i className="iconfont icon-bofang" onClick={this.handleClick}></i>}
                 <i className="iconfont icon-liebiaoqingdan" onClick={this.changeShow}></i>
               </div>
             </div>

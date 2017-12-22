@@ -70,7 +70,7 @@ class Single extends Component {
         }
     }
     componentDidMount(){
-        this.props.fetchPlayList(/gd=(\d+)/.exec(window.location.hash)[1])
+        this.props.fetchPlayList(/gd=(\d+)/.exec(window.location.hash)?/gd=(\d+)/.exec(window.location.hash)[1]:null)
         this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
         console.log(/id=(\d+)/.exec(window.location.hash)[0]);
     }

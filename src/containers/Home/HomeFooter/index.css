@@ -8,31 +8,34 @@
   background: #ffe4e2;
   z-index: 10;
 }
-.home-footer .home-song {
+.home-footer a {
+  width: 100%;
+}
+.home-footer a .home-song {
   height: 100%;
   width: 70%;
   display: flex;
   flex-direction: row;
 }
-.home-footer .home-song div:nth-child(1) {
+.home-footer a .home-song div:nth-child(1) {
   width: 0.5rem;
   height: 0.5rem;
 }
-.home-footer .home-song div:nth-child(1) img {
+.home-footer a .home-song div:nth-child(1) img {
   width: 0.4rem;
   height: 0.4rem;
   padding: 0.05rem;
 }
-.home-footer .home-song div:nth-child(2) {
+.home-footer a .home-song div:nth-child(2) {
   display: flex;
   flex-direction: column;
   padding: 0.05rem 0;
 }
-.home-footer .home-song div:nth-child(2) .home-song-title {
+.home-footer a .home-song div:nth-child(2) .home-song-title {
   margin-left: .2rem;
   font-size: 0.16rem;
 }
-.home-footer .home-song div:nth-child(2) .home-song-lyrics {
+.home-footer a .home-song div:nth-child(2) .home-song-lyrics {
   margin-left: .2rem;
   font-size: 0.12rem;
 }

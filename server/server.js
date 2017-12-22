@@ -122,12 +122,28 @@ app.get('/songmenudetail',(req,res) => {
         res.json(JSON.parse(data));
     })
 });
+app.get('/personalized', (req, res) => {
+    request(`http://localhost:${listen}/personalized/newsong`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+// 最新MV
+app.get('/mvfirst', (req, res) => {
+    let num = 10;
+    request(`http://localhost:${listen}/mv/first?limit=${num}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    });
+});
+app.get('/mvinfo', (req, res) => {
+    request(`http://localhost:${listen}/mv?mvid=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    });
+});
 app.get('/music',(req,res) => {
     request(`http://localhost:${listen}/music/url?id=${req.query.id}`, function (error, response, data) {
         res.json(JSON.parse(data));
     })
 });
-
 app.get('/musicsingle',(req,res) => {
     request(`http://localhost:${listen}/artists?id=${req.query.id}`, function (error, response, data) {
         res.json(JSON.parse(data));

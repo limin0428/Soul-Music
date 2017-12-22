@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './index.css';
-
 import {Link} from 'react-router-dom';
-import {getMvFirst, getMvInfo} from '../../../api/home'
+import {getMvFirst, getMvInfo} from '../../../api/home';
+
 
 export default class VideoPage extends Component {
     constructor() {
@@ -108,6 +108,7 @@ export default class VideoPage extends Component {
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }

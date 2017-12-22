@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './index.css';
-
 import {Link} from 'react-router-dom';
 import {getMvFirst,getMvInfo} from '../../../api/home'
 import Tab from '../../../components/Tab'
 export default class VideoList extends Component {
+
     constructor() {
         super();
         this.state = {video: [],videoInfo:[]}
+
     }
     componentDidMount() {
         getMvFirst().then(res => {
@@ -18,7 +19,6 @@ export default class VideoList extends Component {
         let videos = this.state.video || [];
         return (
             <div className="video_demo">
-                <Tab title="视频"/>
                 {
                     videos.map((item,index)=>(
                         <div className="video_list" key={item.artistId}>
@@ -37,6 +37,7 @@ export default class VideoList extends Component {
                         </div>
                     ))
                 }
+                <Tab title="视频"/>
             </div>
         )
     }

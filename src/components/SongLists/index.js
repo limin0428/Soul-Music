@@ -6,12 +6,11 @@ import './index.css';
 export default class SongLists extends Component {
     render() {
         let gd = this.props.gd;
-        console.log(gd);
         return (
             <div className="songlists">
                 <ul>
                     {
-                        this.props.tracks.map((item,index)=>(
+                        this.props.tracks.slice(0,45).map((item,index)=>(
 
                             <Link to={`/single?gd=${gd}&id=${item.id}`}  key={item.id}>
                                 <li>

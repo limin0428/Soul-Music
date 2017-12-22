@@ -11,13 +11,10 @@ export function getMv() {
 export function getSearch(keywords) {
     return get(`/search?keywords=${keywords}`);
 }
-export function getSongMenuDetail(id) {
-    return get(`/songmenudetail?id=${id}`);
-}
 
 
 export function getPersonalized() {
-    return get(`/mv`);
+    return get(`/personalized`);
 }
 
 export function getMvFirst() {
@@ -26,9 +23,9 @@ export function getMvFirst() {
 export function getMvInfo(id) {
     return get(`/mvinfo?id=${id}`)
 }
-
-
 export function getOneSong(id) {
     return get(`/music?id=${id}`);
 }
-
+export function getSongMenuDetail(id) {
+    return get(`/songmenudetail?id=${id}`);
+}

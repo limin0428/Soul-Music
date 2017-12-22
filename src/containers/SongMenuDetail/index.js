@@ -11,7 +11,6 @@ export default class SongMenuDetail extends Component {
     }
     componentDidMount() {
         let url=window.location.href;
-        console.log(url);
         let id = /id=(\d+)/.exec(window.location.hash)[1];
         this.setState({gd:id});
         getSongMenuDetail(id).then(res => {
@@ -22,7 +21,7 @@ export default class SongMenuDetail extends Component {
         return (
             this.state.music.code ? <div className="musica">
                 <div className="containers">
-                    <Tab/>
+                    <Tab title="歌单"/>
                     <div className="container_bg"  style={{background: `url(${this.state.music.playlist.coverImgUrl}) center`, opacity: .8}}>
                     </div>
                     <div className="detail-header">
