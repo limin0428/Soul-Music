@@ -1,29 +1,32 @@
-.ranklists {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0.6rem;
+.ranklists{
+    width:100%;
+    margin-top:.6rem;
 }
-.ranklists .ranklists ul {
-  height: 100%;
-  position: fixed;
-  top: 0.6rem;
-  bottom: 0;
-  background-color: #fff;
-  overflow: scroll;
+.ranklists ul{
+    background-color:#fff;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
-.ranklists .ranklists ul .ranklist {
-  height: 1rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
+.ranklist{
+    width:100%;
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid #ddd;
 }
-.ranklists .ranklists ul .ranklist .rank-cover {
-  width: 1rem;
-  height: 1rem;
+.rank-cover{
+    width:1rem;
+    height:1rem;
 }
-.ranklists .ranklists ul .ranklist .rank-cover img {
-  width: 100%;
-  height: 100%;
+.rank-cover img{
+    width:100%;
+    height:100%;
+}
+.rank-hot {
+    margin-left:.2rem;
+}
+.rank-hot p{
+    line-height:.2rem;
+    padding:.08rem;
 }
