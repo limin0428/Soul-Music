@@ -24,44 +24,37 @@ class Single extends Component {
 
     handleGoTime=(time)=>{
             this.setState({currentTime:time})}
-    timeConvert=(timestamp)=>{
-            var minutes = Math.floor(timestamp / 60);
-            var seconds = Math.floor(timestamp - (minutes * 60));
-
-            if(seconds < 10) {
-                seconds = '0' + seconds;
-            }
-
-            timestamp = minutes + ':' + seconds;
-            return timestamp;
-        }
     handlePlay=()=>{
         this.setState({isPlay:!this.state.isPlay});
     }
     handleChangeProgress=(nowtime)=>{
         this.setState({currentTime:nowtime})
     };
+
     itemIndex=0;
     handleChangeSong=(index)=>{
         this.itemIndex=index;
-        this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
+        this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1])
         console.log(this.itemIndex);
         if(this.props.playList.tracks.length>0){
+            this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
             this.setState({isPlay:true,
+                songUrl:this.props.playList.SongData[0].url,
                 currentTrackLen:this.props.playList.tracks.length,
                 picUrl:this.props.playList.tracks[this.itemIndex].al.picUrl,
-                songUrl:this.props.playList.SongData[0].url,
                 currentSongID:this.props.playList.tracks[this.itemIndex].id,
                 songName:this.props.playList.tracks[this.itemIndex].name,
                 singleName:this.props.playList.tracks[this.itemIndex].ar[0].name,
+                currentTolTime:Math.floor(this.props.playList.SongData[0].size/1048576*1024*1024*8/128/1000)
             });
-            console.log("歌单里id",this.state.currentSongID,"歌曲id",this.props.playList.SongData[0].id);
         }
     };
 
     handleNext=()=>{
         if (this.itemIndex<this.props.playList.tracks.length-1){
             this.handleChangeSong(this.itemIndex+1)
+            window.location.hash=`/single?id=${this.state.currentSongID}`
+            this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
         }else{
             this.setState({isPlay:false})
         }
@@ -69,51 +62,59 @@ class Single extends Component {
     handlePrev=()=>{
         if (this.itemIndex>0){
             this.handleChangeSong(this.itemIndex-1)
+            window.location.hash=`/single?id=${this.state.currentSongID}`
+            this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
         }
     }
     componentDidMount(){
-        this.props.fetchPlayList(156934569);
+        this.props.fetchPlayList(/gd=(\d+)/.exec(window.location.hash)[1])
         this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
+        console.log(/id=(\d+)/.exec(window.location.hash)[0]);
     }
     componentDidUpdate(){
-        if(this.state.currentTime>this.state.currentTolTime){
-            console.log("进啦");
-            this.handleNext()
-        }
+        // if(this.state.currentTime>this.state.currentTolTime){
+        //     console.log("进啦");
+        //     this.handleNext()
+        // }
+
     }
     render(){
         return (
-            <div>
-                <Audio
-                    songUrl={this.state.songUrl}
-                    isPlay={this.state.isPlay}
-                    currentTolTime={this.state.currentTolTime}
-                    currentTime={this.state.currentTime}
-                    handleGoTime={this.handleGoTime}
-                    handleChangeProgress={this.handleChangeProgress}
-                />
-                    <MusicPlayerHeader
-                        songName={this.state.songName}
-                        singleName={this.state.singleName}/>
-                <MusicInfo isPlay={this.state.isPlay}
-                           picUrl={this.state.picUrl}
-                           currentTrackIndex={this.state.currentTrackIndex}
-                           itemIndex={this.itemIndex}
+           <div>
+               <Audio
+                   songUrl={this.state.songUrl}
+                   isPlay={this.state.isPlay}
+                   currentTolTime={this.state.currentTolTime}
+                   currentTime={this.state.currentTime}
+                   handleGoTime={this.handleGoTime}
+                   handleChangeProgress={this.handleChangeProgress}
+                   handleGetSong={this.handleGetSong}
+                   timeConvert={this.timeConvert}
+               />
+               <MusicPlayerHeader
+                   songName={this.state.songName}
+                   singleName={this.state.singleName}/>
+               <MusicInfo isPlay={this.state.isPlay}
+                          picUrl={this.state.picUrl}
+                          currentTrackIndex={this.state.currentTrackIndex}
+                          itemIndex={this.itemIndex}
+                          handleGetSong={this.handleGetSong}
 
-                />
-                    <Control isPlay={this.state.isPlay}
-                             handlePlay={this.handlePlay}
-                             handleChangeSong={this.handleChangeSong}
-                             currentTolTime={this.state.currentTolTime}
-                             currentTime={this.state.currentTime}
-                             handleGoTime={this.handleGoTime}
-                             handleChangeProgress={this.handleChangeProgress}
-                             handleNext={this.handleNext}
-                             handlePrev={this.handlePrev}
-                             itemIndex={this.itemIndex}
-                             currentSongID={this.state.currentSongID}
-                    />
-            </div>
+               />
+               <Control isPlay={this.state.isPlay}
+                        handlePlay={this.handlePlay}
+                        handleChangeSong={this.handleChangeSong}
+                        currentTolTime={this.state.currentTolTime}
+                        currentTime={this.state.currentTime}
+                        handleGoTime={this.handleGoTime}
+                        handleChangeProgress={this.handleChangeProgress}
+                        handleNext={this.handleNext}
+                        handlePrev={this.handlePrev}
+                        itemIndex={this.itemIndex}
+                        currentSongID={this.state.currentSongID}
+                        handleGetSong={this.handleGetSong}
+               />
+           </div>
         )
     }
 }

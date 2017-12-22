@@ -2,8 +2,6 @@ import React,{Component} from 'react';
 import './Control-icon.css'
 import Progress from "../Progress/Progress";
 import PlayList from "../PlayList/PlayList";
-import Audio from "../Audio/Audio";
-// const songUrl=require('../Audio/audio/demo.m4a');
 export default class Control extends Component{
     constructor(){
         super();
@@ -19,6 +17,9 @@ export default class Control extends Component{
     handlePlayList=()=>(
        this.setState({isPlayList:!this.state.isPlayList})
     );
+    componentDidUpdate(){
+
+    }
         render(){
         return (
            <div className='controls-main'>
@@ -34,6 +35,7 @@ export default class Control extends Component{
                              handleChangeSong={this.props.handleChangeSong}
                              songUrl={this.props.songUrl}
                              handleChangeProgress={this.props.handleChangeProgress}
+                             handleGetSong={this.props.handleGetSong}
                    />
                </div>
                <div className="controls">
@@ -41,7 +43,7 @@ export default class Control extends Component{
 
                    <span className={this.props.isPlay?' iconfont icon-zanting1 icon-pause':' iconfont icon-bofang icon-play'} onClick={this.props.handlePlay}>
                            </span>
-                   <span className="icon-prev iconfont icon-shangxiayishou" onClick={this.props.handleNext}> </span>
+                       <span className="icon-prev iconfont icon-shangxiayishou" onClick={this.props.handleNext}> </span>
                </div>
                <div className='controls-footer'>
                    <span className='icon-list iconfont icon-liebiao1' onClick={this.handlePlayList}> </span>
@@ -54,6 +56,7 @@ export default class Control extends Component{
                        handlePlayList={this.handlePlayList}
                        currentTrackIndex={this.props.currentTrackIndex}
                              itemIndex={this.props.itemIndex}
+                             handleGetSong={this.props.handleGetSong}
                    />
                </div>
            </div>

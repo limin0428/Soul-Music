@@ -1,7 +1,8 @@
 import * as types from "../action-types";
 let initState={
     tracks:[],
-    SongData:[]
+    SongData:[],
+    SingleData:[]
 };
 
 export function playList(state=initState,action) {

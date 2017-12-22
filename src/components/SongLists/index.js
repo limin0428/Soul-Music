@@ -7,13 +7,14 @@ import './index.css';
 export default class SongLists extends Component {
 
     render() {
-        console.log(this.props.tracks);
+        let gd = this.props.gd;
+        console.log(gd);
         return (
             <div className="songlists">
                 <ul>
                     {
                         this.props.tracks.map((item,index)=>(
-                            <Link to={`/single?id=${item.id}`}  key={item.id}>
+                            <Link to={`/single?gd=${gd}&id=${item.id}`}  key={item.id}>
                                 <li>
                                     <div className="songlist-left">{index+1}</div>
                                     <div className="songlist">

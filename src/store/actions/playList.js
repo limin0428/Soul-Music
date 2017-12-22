@@ -5,7 +5,7 @@ let actions = {
     fetchPlayList(id) {
         return function (dispatch, getState) {
             getSongMenuDetail(id).then(res => {
-                console.log("haha",res.playlist.tracks.slice(0,10));
+
                 dispatch({
                     type: types.ADD_PLAYLIST
                     , tracks:res.playlist.tracks.slice(0,10)
@@ -25,6 +25,5 @@ let actions = {
             })
         }
     },
-
 };
 export default actions;

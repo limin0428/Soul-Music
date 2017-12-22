@@ -7,6 +7,8 @@ export const ADD_PLAYLIST='ADD_PLAYLIST';
 export const CHANGE_SONG='CHANGE_SONG';
 
 export const GET_ONE_SONG="GET_ONE_SONG"
+
+export const GET_ONE_SINGLE="GET_ONE_SINGLE"
 //注册
 export const REG = 'REG';
 //登录

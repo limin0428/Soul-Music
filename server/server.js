@@ -128,6 +128,13 @@ app.get('/music',(req,res) => {
     })
 });
 
+app.get('/musicsingle',(req,res) => {
+    request(`http://localhost:${listen}/artists?id=${req.query.id}`, function (error, response, data) {
+        res.json(JSON.parse(data));
+    })
+});
+
+
 
 
 

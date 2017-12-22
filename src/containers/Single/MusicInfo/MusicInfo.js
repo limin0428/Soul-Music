@@ -10,7 +10,7 @@ class MusicInfo extends Component {
         }
     }
     componentDidMount(){
-        this.props.fetchPlayList();
+        // this.props.fetchPlayList();
     }
 
     componentDidUpdate(){
@@ -55,12 +55,15 @@ class MusicInfo extends Component {
                         </div>
                         <div className='song-lrc'>
                             <p>
-                                {
-                                    this.props.playList.tracks[this.props.itemIndex].song.lrc.lyric?this.regCn.exec(this.props.playList.tracks[this.props.itemIndex].song.lrc.lyric)[1]:null
-                                }
+                                找不到匹配歌词...
                             </p>
+                            <p>
+                                ...其实是不会写
+                            </p>
+
                         </div>
-                    </div> : this.musicInfo()
+                    </div> :
+                    this.musicInfo()
                 }
                 <span className='go-lrc iconfont icon-zhuomiangeci' onClick={this.handleSong}> </span>
                 <div className='music-bg'>
