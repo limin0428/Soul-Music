@@ -12,7 +12,11 @@
 }
 .song-recommend{
     width: 100%;
+<<<<<<< HEAD
     height: 3.9rem;
+=======
+    height: 3.5rem;
+>>>>>>> zz
 }
 .list1{
     position: relative;
@@ -41,7 +45,11 @@
 
 }
 .list1_item{
+<<<<<<< HEAD
     float: left; height: 1.2381rem;
+=======
+    float: left; height: 1.02rem;
+>>>>>>> zz
 }
 .song-recommend .list1 .list-text{
     float: left; color: #555555;

@@ -25,10 +25,8 @@ export default class SongView extends Component {
                                 </p>
                             </Link>
                         </li>
-
                     ))
                 }
-
             </ul>
         )
     }

@@ -1,0 +1,11 @@
+.dynamic{
+    position: relative;
+}
+
+.dynamic-t{
+    position: absolute;
+    top: .50rem;
+    left: 1.2rem;
+    color: #797979;
+    font-size: .16rem;
+}

@@ -6,6 +6,7 @@ app.use(bodyParser.json());
 let session = require('express-session');
 app.listen(9527);   // 后台端口
 let listen = 3000;  // 数据端口
+
 // let sliders=require('./mock/sliders');
 // let recommendList=require('./mock/recommendList');
 // let newSongs=require('./mock/newSongs');
@@ -21,7 +22,6 @@ app.use(session({
     saveUninitialized: true,
     secret: 'zfpx'
 }));
-
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
     res.header('Access-Control-Allow-Headers', "Content-Type");
@@ -33,8 +33,6 @@ app.use(function (req, res, next) {
         next();
     }
 });
-
-
 let users = [];
 // 登录
 app.post('/login', function (req, res) {
@@ -141,7 +139,6 @@ app.get('/mvinfo', (req, res) => {
         res.json(JSON.parse(data));
     });
 });
-
 
 /*
 let {type="",offset=0,limit=5} = req.query;

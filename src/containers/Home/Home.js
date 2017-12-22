@@ -12,14 +12,11 @@ export default class Home extends Component {
         super();
         this.state = {Sliders: [], PlayList: [], Mv: []}
     }
-
     componentDidMount() {
         getSliders().then(res => this.setState({Sliders: res.banners})).catch(err => console.log(err));
         getPlayList().then(res => this.setState({PlayList: res.playlists})).catch(err => console.log(err));
         getMv().then(res =>this.setState({Mv: res.result})).catch(err => console.log(err));
     }
-
-
     render() {
         return (
             <div className="home">

@@ -12,7 +12,6 @@ export function get(url){
         }
     }).then(res=> res.json())//把响应体转成json
 }
-
 export function post(url,data) {
 
         return fetch(HOST+url, {

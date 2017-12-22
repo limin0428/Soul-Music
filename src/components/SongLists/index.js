@@ -1,9 +1,8 @@
+
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './index.css';
-
 //歌曲列表，可复用
-
 export default class SongLists extends Component {
 
     render() {

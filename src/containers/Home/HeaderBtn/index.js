@@ -25,7 +25,7 @@ export default class HeaderBtn extends Component {
                     </Link>
                 </div>
                 <div className="headerBtnBox">
-                    <Link to="/reclist" >新碟上架</Link>
+                    <Link to="/reclist" >音乐</Link>
                     <Link to="/rankinglist">排行榜</Link>
                     <Link to="/video">视频</Link>
                 </div>

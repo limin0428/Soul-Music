@@ -17,7 +17,7 @@ import Alert from '../../components/Alert/'
              <div className="login_bg">
 
                  <div id="logo">
-                     <img src={require('../../images/logo.png')}/>
+                     <i className="iconfont icon-yinyue1"></i>
                  </div>
                  <form action="">
                      <div className="userName">
@@ -43,7 +43,7 @@ import Alert from '../../components/Alert/'
                      <button
                          onClick={this.rendleLogin}
                          className="login_btn" type="submit">登&nbsp;&nbsp;录</button>
-                     <Link className="reg_btn" to="./reg">前去注册</Link>
+                     <Link className="reg_btn login_btn" to="./reg">前去注册</Link>
                  </form>
 
                  <div className="other_login">
@@ -51,18 +51,17 @@ import Alert from '../../components/Alert/'
                      <span>其他方式登录</span>
                      <div className="other"></div>
                  </div>
-                 <div className="other_choose">
-                     <a href="javaScript:;">
-                         <img src={require('../../images/qq.png')}/>
+                 <div className="other_choose">=
+                     <a href="">
+                         <i className="iconfont icon-qq"></i>
                      </a>
-                     <a href="javaScript:;">
-                         <img src={require('../../images/wx.png')}/>
+                     <a href="">
+                         <i className="iconfont icon-nickname"></i>
                      </a>
-                     <a href="javaScript:;">
-                         <img src={require('../../images/wb.png')}/>
+                     <a href="">
+                         <i className="iconfont icon-weibo"></i>
                      </a>
                  </div>
-                 <Alert/>
              </div>
              <Alert/>
          </div>

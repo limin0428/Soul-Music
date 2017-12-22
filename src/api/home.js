@@ -11,7 +11,6 @@ export function getMv() {
 export function getSearch(keywords) {
     return get(`/search?keywords=${keywords}`);
 }
-
 export function getSongMenuDetail(id) {
     return get(`/songmenudetail?id=${id}`);
 }

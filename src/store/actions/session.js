@@ -26,7 +26,7 @@ export default {
                     payload:{success,error,user}
                 });
                 if(code==0){
-                    dispatch(push('/navleft'))
+                    dispatch(push('/'))
                 }
             })
         }
@@ -39,7 +39,7 @@ export default {
                     type:types.LOGOUT,
                     payload:{success,error}
                 });
-                diapatch(push('/login'));
+                diapatch(push('/'));
             })
         }
     },

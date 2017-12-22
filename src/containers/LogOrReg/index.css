@@ -1,6 +1,16 @@
 #logo{
     margin-bottom: 50px;
 }
+go i {
+    font-size: 100px;
+    color: #e0e0e0;
+    opacity: .8;
+}
+
+.logor{
+    width: 100%;
+    height: 40px;
+}
 .login_btn{
     margin: 10px auto;
     width: 90%;
@@ -39,6 +49,13 @@
     top:83.5%;
     position: absolute;
     margin: 0 13%;
+}
+.other_choose i{
+    font-size: 30px;
+    color: #cacaca;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 .login_bg .other_choose a{
     display: block;

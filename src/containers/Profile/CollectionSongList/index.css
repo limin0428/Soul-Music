@@ -1,0 +1,63 @@
+.CollectionSongList{
+
+}
+.CollectionSongList li{
+    height: .60rem;
+}
+.CollectionSongList .list-item{
+    height: .25rem;
+    background-color: #e1e1e1;
+    line-height: .25rem;
+    padding-left: .10rem; ;
+    color: black;
+    font-size: .14rem;
+}
+.CollectionSongList .list-item-t{
+    margin-bottom: .06rem;
+
+}
+.CollectionSongList .list-item-t .i{
+    background-color: #25262d;
+    width: .60rem;
+    height: .60rem;
+    position: relative;
+}
+.CollectionSongList .list-item-t  .icon-paixing{
+    font-size: .40rem;
+    color: #f0f0f0;
+    position: absolute;
+    top: .10rem;
+    left: .10rem;
+
+}
+.CollectionSongList .list-item-t  .icon-xihuan{
+    font-size: .35rem;
+    color: #f0f0f0;
+    position: absolute;
+    top: .10rem;
+    left: .07rem;
+
+}
+.CollectionSongList .list-item-t span{
+    display: block;
+}
+.CollectionSongList .list-item-t .ics{
+    width: 100%;
+    position: absolute;
+    top: 3.73rem;
+    left: .70rem;
+    border-bottom: 1px solid silver;
+    padding-bottom: .10rem;
+}
+.CollectionSongList .list-item-t .ss {
+    top: 4.37rem;
+}
+.CollectionSongList .list-item-t  .ics-1{
+    font-size: .17rem;
+    color: black;
+    margin-bottom: .02rem;
+}
+.CollectionSongList .list-item-t  .ics-2{
+    font-size: .14rem;
+    color: #959595;
+}

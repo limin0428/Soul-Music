@@ -84,7 +84,6 @@ export default class HomeFooter extends Component{
       );
         return (
             <div className="home-footer">
-              <Link to="/single">
               <div className="home-song">
                 <div>
                   {/*<img src={require('../../../../image/fengmian.jpg')}/>*/}
