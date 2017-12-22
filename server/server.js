@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 let session = require('express-session');
 app.listen(9527);   // 后台端口
 let listen = 3000;  // 数据端口
+
 let sliders=require('./mock/sliders');
 let recommendList=require('./mock/recommendList');
 let newSongs=require('./mock/newSongs');
@@ -20,7 +21,7 @@ let songs=require('./mock/songs');
 app.use(session({
     resave: true,
     saveUninitialized: true,
-    secret: 'zfpx'
+    secret: 'soulmusic'
 }));
 /*app.use(function (req,res,next) {
     setTimeout(()=>{
@@ -77,8 +78,6 @@ app.get('/rankList',function (req,res) {
 app.get('/playlist',function (req,res) {
     res.json(playlist.playlists);
 });
-
-
 
 
 

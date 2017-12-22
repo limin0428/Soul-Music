@@ -22,8 +22,6 @@ export default class Home extends Component {
     }
 
     render() {
-
-        console.log(this.state.Mv);
         return (
             <div className="home">
                 <Header/>

@@ -1,4 +1,3 @@
-
 import {get,post} from './index';
 //注册
 export function reg(user) {
