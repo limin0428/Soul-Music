@@ -27,6 +27,9 @@ class Single extends Component {
     handlePlay=()=>{
         this.setState({isPlay:!this.state.isPlay});
     }
+    handlePouse=()=>{
+        this.setState({isPlay:false});
+    }
     handleChangeProgress=(nowtime)=>{
         this.setState({currentTime:nowtime})
     };
@@ -67,7 +70,7 @@ class Single extends Component {
         }
     }
     componentDidMount(){
-        this.props.fetchPlayList(/gd=(\d+)/.exec(window.location.hash)[1])
+        this.props.fetchPlayList(/gd=(\d+)/.exec(window.location.hash)?/gd=(\d+)/.exec(window.location.hash)[1]:null)
         this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
         console.log(/id=(\d+)/.exec(window.location.hash)[0]);
     }
@@ -109,10 +112,12 @@ class Single extends Component {
                         handleGoTime={this.handleGoTime}
                         handleChangeProgress={this.handleChangeProgress}
                         handleNext={this.handleNext}
+                        handlePouse={this.handlePouse}
                         handlePrev={this.handlePrev}
                         itemIndex={this.itemIndex}
                         currentSongID={this.state.currentSongID}
                         handleGetSong={this.handleGetSong}
+
                />
            </div>
         )

@@ -13,7 +13,7 @@
   width:100%;
   min-height: 100%;
   text-align: center;
-  background: #e0ebf4;
+  background: url("../../images/bj11.png") no-repeat;
   opacity: 0.9;
   position: absolute;
   top: 0;
@@ -23,8 +23,10 @@
   margin: 9% auto;
   width: 30.25%;
 }
-img{
-  width: 100%;
+#logo i {
+ font-size: 100px;
+  color: #e0e0e0;
+  opacity:.8;
 }
 form{
   width: 80%;

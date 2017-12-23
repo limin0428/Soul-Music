@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import './index.css';
 import SongView from '../../../../components/SongView/index';
-
 export default class Recomment extends Component {
-
   render() {
     return (
       <div className="demo">

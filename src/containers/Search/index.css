@@ -1,15 +1,17 @@
+
 .search-header {
     width: 100%;
     height: .65rem;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #363636;
+    background-color: #ff1d49;
 }
 
 .search-headerBox .search-inputBox {
     position: absolute;
     left: .15rem;
+
     top: .2rem;
     width: 2.5rem;
     height: .3rem;
@@ -100,3 +102,4 @@
     line-height: .6rem;
     margin-right: .1rem;
 }
+

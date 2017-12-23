@@ -81,8 +81,17 @@
     font-size: 0.17rem;
     border-bottom: 1px solid #cccccc;
 }
-.play-listBody .play-listContent span{
+.play-listBody .play-listContent div{
+    float: left;
+    width:70%;
+    margin-left:4%;
+    overflow: hidden;
+    height:0.4rem;
+}
+.play-listBody .play-listContent>span{
     margin-left: 0.2rem;
+    width:20%;
+    float: right;
 }
 .play-listBody .play-listContent span:nth-child(1){
     font-size: 0.18rem;

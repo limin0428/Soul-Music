@@ -67,7 +67,7 @@
     position: absolute;
     left: .07rem;
     line-height:0.5rem;
-    font-size: .35rem;
+    font-size: .36rem;
     color: #ff4f4b;
 }
 
@@ -81,13 +81,12 @@
     width: .5rem;
     height: .5rem;
     margin-right: .18rem;
-
 }
 
 .font .icon-shipin{
     position: absolute;
     top: .1rem;
-    left: .12rem;
+    left: .1rem;
     font-size: 30px;
     color: red;
 }

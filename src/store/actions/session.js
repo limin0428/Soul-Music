@@ -10,7 +10,7 @@ export default {
                 dispatch({
                     type: types.REG,
                     payload: {success, error}
-                })
+                });
                 if (code == 0) {//成功
                     dispatch(push('/login'));
                 }
@@ -26,7 +26,7 @@ export default {
                     payload:{success,error,user}
                 });
                 if(code==0){
-                    dispatch(push('/navleft'))
+                    dispatch(push('/'))
                 }
             })
         }
@@ -39,7 +39,7 @@ export default {
                     type:types.LOGOUT,
                     payload:{success,error}
                 });
-                diapatch(push('/login'));
+                diapatch(push('/'));
             })
         }
     },

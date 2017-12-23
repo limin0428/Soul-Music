@@ -17,7 +17,7 @@
     font-size: 0.2rem;
     z-index: 5;
     overflow: hidden;
-    color:#5c0000;
+    color: #e2f7f8;
 
 }
 .timeLine{
@@ -28,7 +28,7 @@
     align-items: center;
     width: 4rem;
     height: 0.04rem;
-    background-color: #7ebaff;
+    background-color: #f6fff3;
     margin-top: 0.29rem;
     overflow: hidden;
 }

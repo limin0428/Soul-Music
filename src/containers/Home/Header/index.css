@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #363636;
+    background-color: #ff1d49;
     z-index: 100;
 }
 
@@ -12,15 +12,21 @@
     position: absolute;
     left:.55rem;
     top: .2rem;
-    width: 2.2rem;
+    width: 2.4rem;
     height: .3rem;
-    border: 1.5px solid #FFF102;
+    border: 1px solid #808a99 ;
     border-radius: .3rem;
     font-size: .14rem;
     padding-left: .2rem;
     color:#808a99 ;
 }
-.icon-maikefeng1{
+.headerBox i{
+    position: absolute;
+    right: .8rem;
+    top:.28rem;
+    font-size: .17rem;
+}
+.icon-geren7{
     position: absolute;
     top:.2rem;
     font-size:.26rem;

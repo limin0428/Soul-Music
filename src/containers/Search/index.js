@@ -39,7 +39,7 @@ export default class Search extends Component {
                     <ul className="search-list">
                         {
                             this.state.keywords.map((item, index) => (
-                                <Link to={`/single?id=${item.id}`} key={index}>
+                                <Link to='/songmenudetail?id=733122887' key={index}>
                                     <li className="search-item">
                                         <div className="songlist-item">
                                             <p className="songlist-name-item">{item.name}</p>
