@@ -19,11 +19,7 @@ export default class Progress extends Component{
         this.props.handleChangeProgress(nowTime);
 
     }
-    // componentDidUpdateMount(){
-    //     if(this.props.currentTime>=this.props.currentTolTime){
-    //         this.props.handleChangeSong(this.props.currentTrackIndex+1)
-    //     }
-    // }
+
     render(){
         return (
             <div>

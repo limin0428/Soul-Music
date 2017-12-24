@@ -23,10 +23,6 @@ export default class Control extends Component{
         render(){
         return (
            <div className='controls-main'>
-
-               {/*<div className='controls-info'>*/}
-               {/*</div>*/}
-               {/*<Audio songUrl={songUrl}  isPlay={this.state.isPlay} />*/}
                <div className='controls-progress'>
                    <Progress currentTolTime={this.props.currentTolTime}
                              currentTime={this.props.currentTime}

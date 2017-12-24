@@ -9,8 +9,6 @@ constructor(){
     this.state={num:0}
 }
     componentDidMount(){
-
-
         // this.props.fetchGetSong(/id=(\d+)/.exec(window.location.hash)[1]);
     }
     componentDidUpdate(){

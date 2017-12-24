@@ -76,10 +76,8 @@ class Single extends Component {
     }
     componentDidUpdate(){
         // if(this.state.currentTime>this.state.currentTolTime){
-        //     console.log("进啦");
         //     this.handleNext()
         // }
-
     }
     render(){
         return (

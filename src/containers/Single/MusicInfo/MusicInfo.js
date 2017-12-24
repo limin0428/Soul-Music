@@ -26,7 +26,6 @@ class MusicInfo extends Component {
             <div className='musicInfo-middle'>
                 <div className='musicInfo-pic'
                      style={this.props.isPlay ? {animationPlayState: "running"} : {animationPlayState: "paused"}}>
-                    {/*<div className='music-picBg'></div>*/}
                     <img className='PicInfo'
                          src={this.props.picUrl}
                          alt=""/>
@@ -55,10 +54,10 @@ class MusicInfo extends Component {
                         </div>
                         <div className='song-lrc'>
                             <p>
-                                找不到匹配歌词...
+
                             </p>
                             <p>
-                                ...其实是不会写
+                                找不到匹配歌词...
                             </p>
 
                         </div>
