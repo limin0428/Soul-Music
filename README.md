@@ -1,3 +1,11 @@
+#环境运行
+- git clone 地址
+- 找到NeteaseCloudMusicApi文件,剪切到其他文件内,解压NeteaseCloudMusicApi文件,使用cmd命令node.app.js运行
+- 回到Soul-Music文件内npm install 配置文件
+- 然后启动server.js
+- npm run dev
+- 即可访问页面localhost:8080
+
 
 # 技术栈
 - react
