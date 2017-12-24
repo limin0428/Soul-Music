@@ -1,0 +1,22 @@
+.about{
+    padding-top: .20rem;
+}
+.about li{
+    width: 100%;
+    height: .28rem;
+    font-size: .16rem;
+}
+.about .about-item-s{
+    color: black;
+}
+.about .about-item-s i{
+    color: red;
+    margin-right: .04rem;
+}
+.about .about-item{
+    color: #797979;
+    margin-left: .20rem;
+}
+.about .about-item-p{
+    color: #a8a8a8;
+}

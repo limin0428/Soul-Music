@@ -594,8 +594,8 @@
     "reduce-css-calc": "^1.3.0",
     "reduce-function-call": "^1.0.2",
     "redux": "^3.7.2",
-    "redux-promise": "^0.5.3",
     "redux-logger": "^3.0.6",
+    "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
     "regenerate": "^1.3.3",
     "regenerator-runtime": "^0.11.1",
@@ -742,9 +742,6 @@
     "type": "git",
     "url": "git+https://github.com/limin0428/Soul-Music.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/limin0428/Soul-Music/issues"
   },

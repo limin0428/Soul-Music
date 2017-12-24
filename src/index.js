@@ -1,6 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./containers/App";
 
-alert(1);
-ReactDOM.render(<App/>,document.querySelector('#app'));
+
+import {Provider} from 'react-redux'
+import App from "./App";
+import store from './store';
+
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>
+    ,document.querySelector('#app'));
+
+

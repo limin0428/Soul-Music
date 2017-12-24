@@ -1,0 +1,11 @@
+@import "//at.alicdn.com/t/font_0wqykoshvsd1jor.css";
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+html a,
+body a {
+  text-decoration: none;
+}

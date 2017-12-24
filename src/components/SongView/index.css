@@ -1,0 +1,52 @@
+.songview-lists{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  overflow-y: scroll;
+  background: #fff;
+}
+.songview-list{
+  width:49%;
+  background: #fff;
+}
+.songview-cover{
+  width:100%;
+  position:relative;
+}
+.songview-img{
+  width: 78%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+.songview-img img{
+  width:100%;
+  height:100%;
+}
+.songview-demand{
+  position: absolute;
+  top: 5px;
+  right: 32px;
+  border: 1px solid black;
+  height: 87%;
+  width: 4%;
+  z-index: 1;
+  border-left: none;
+}
+.songview-author{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 84%;
+  background: linear-gradient(to top right, #200004, #8d8a88);
+  width: 50%;
+  z-index: 1;
+  border-left: none;
+  border-radius: 50%;
+}
+.songview-title{
+
+  padding:.12rem 0 ;
+}
